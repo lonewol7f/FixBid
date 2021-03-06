@@ -18,7 +18,7 @@
 
     git commit -m “message”
 
-    git push origin <branch name> – This creates the branch remotely and pushes to that branch on GitHub    
+    git push -u origin <branch name> – This creates the branch remotely and pushes to that branch on GitHub    
     ```
     * Go to GitHub and create a new pull request
     * Once someone reviews the pull request. they will resolve any issues or conflicts that come up and approve the pull request to be merged into the main
