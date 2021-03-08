@@ -8,11 +8,11 @@
 
 2. Create a new branch for each new feature <br>
     * `git checkout -b branchName` - This creates the branch and checks it out&nbsp;&nbsp;(Use for creating new branch) <br>
-    * `git checkout branchName` - This checks out the branch&nbsp;&nbsp;(Use second time onwards for same branch) <br>
+    * `git checkout branchName` - This checks out the branch&nbsp;&nbsp;(Use second time onward for same branch) <br>
     * Be sure to always check which branch you are on using “git status” before you begin working!
 
 3. Merge your branch <br>
-    * After completeing your feature you should merge your branch to main branch <br>
+    * After completing your feature you should merge your branch to main branch <br>
     ```
     git add . 
 
