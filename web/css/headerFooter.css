@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 .bg-blue {
     background-color: #001B48;
 }
@@ -58,4 +62,25 @@ footer .heading {
 
 footer .divider {
     border-top: 2px solid rgba(189, 196, 203, 0.5);
+}
+
+/* Back to top */
+.btt {
+    background: #0188be56;
+    position: fixed;
+    right: 10px;
+    bottom: 19px;
+    z-index: 1000;
+    border-radius: 10px;
+    display: none;
+}
+
+.btt:hover {
+    background: #018abe;
+}
+
+.btt i {
+    color: #ffffff;
+    font-size: 35px;
+    padding: 7px;
 }
