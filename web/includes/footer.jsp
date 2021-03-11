@@ -70,7 +70,7 @@
 </footer>
 
 <div class="btt" id="back-to-top">
-    <a href="#"><i class="fas fa-arrow-circle-up"></i></a>
+    <a href="#"><i class="far fa-chevron-up"></i></a>
 </div>
 <script>
     //Get the button
