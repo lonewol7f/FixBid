@@ -14,7 +14,7 @@
                 Send us an Email: fixbid@gmail.com
             </div>
             <div class="col" style="text-align: right;">
-                <i class='far fa-heart'></i>&nbsp;&nbsp;<a>Wishlist</a>
+                <button class ="btn bg-light p-1"><i class='far fa-heart'></i>&nbsp;&nbsp;<a>Wishlist</a></button>
             </div>
         </div>
     </div>
