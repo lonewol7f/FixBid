@@ -1,7 +1,9 @@
 <%--
-  User: lonewol7f
-  Date: 3/8/2021
-  Time: 7:02 PM
+  Created by IntelliJ IDEA.
+  User: Sachintha
+  Date: 13-Mar-21
+  Time: 10:29 PM
+  To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
@@ -15,10 +17,14 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
           integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>FixBid - Home</title>
+    <title>About</title>
 </head>
 <body>
 <%@ include file="/includes/header.jsp" %>
+
+
+
+
 <%@ include file="/includes/footer.jsp" %>
 </body>
 </html>
