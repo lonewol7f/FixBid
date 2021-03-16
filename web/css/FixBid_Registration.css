@@ -12,6 +12,6 @@ label {
 
 }
 
-.btn:hover {
+#reg_submit:hover, #reg_cancel:hover {
     color: black;
 }
