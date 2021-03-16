@@ -20,9 +20,18 @@
 </head>
 <body>
 <%@ include file="/includes/header.jsp" %>
-
 <form action="" class="main-form needs-validation">
     <div class="row">
+        <div class="col">
+            <h2><strong>How are we doing?</strong></h2>
+            <p>We're always working to improve the FixBid experience, so we'd love to hear whats working and how we can
+                do better.</p>
+            <p><strong>This isn't way to contact us, though.</strong> We can't respond to feedback or bug reports
+                individually. If you have a question or need help you can <a href="#">contact us</a></p>
+        </div>
+    </div>
+    <hr class="my-3"/>
+    <div class="row" style="margin-top: 10px">
         <div class="col">
             <div class="form-group">
                 <label for="email">Email</label>
@@ -30,10 +39,19 @@
             </div>
         </div>
     </div>
-    <div class="form-check">
-        <input type="checkbox" id="accept-terms" class="form-check-input">
-        <label for="accept-terms" class="form-check-label">Subscribe Newsletter</label>
+    <div class="form-group">
+        <label for="type">Type</label>
+        <select name="type" id="type" class="form-control">
+            <option selected value="Suggestions">Suggestions</option>
+            <option value="Complaint">Complaint</option>
+        </select>
     </div>
+    <div class="form-group">
+        <label for="comment">Comment</label>
+        <textarea class="form-control" name="comment" id="comment" rows="7" placeholder="Your comment here..."
+                  required></textarea>
+    </div>
+
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 
