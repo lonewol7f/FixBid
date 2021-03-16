@@ -52,12 +52,20 @@
             </div>
             <div class="divider mb-4"></div>
             <div class="row" style="font-size:10px;">
-                <div class="col-md-6 col-sm-6 col-xs-6">
+                <div class="col-md-4 col-sm-4 col-xs-4">
                     <div class="pull-left">
                         <p><i class="fa fa-copyright"></i> 2021 FixBid</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-6 col-xs-6">
+                <div class="col-md-4 col-sm-4 col-xs-4">
+                    <div class="pull-left">
+                        <p><i class="fa fa-phone"></i>&nbsp;&nbsp;+94 77 123 1234</p>
+                    </div>
+                    <div class="pull-right">
+                        <p><i class="fa fa-envelope-o"></i>&nbsp;&nbsp;support@fixbid.com</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-4">
                     <div class="pull-right mr-4 d-flex policy">
                         <div>Terms of Use</div>
                         <div>Privacy Policy</div>

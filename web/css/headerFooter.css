@@ -84,3 +84,17 @@ footer .divider {
     font-size: 35px;
     padding: 7px;
 }
+
+.container_top {
+    width: 100%;
+    padding-left: 15px;
+    margin-left: auto;
+}
+
+bg-light {
+    background-color: rgba(248, 249, 250, 0) !important
+}
+
+button.bg-white:hover {
+    background-color: rgba(218, 224, 229, 0) !important
+}
