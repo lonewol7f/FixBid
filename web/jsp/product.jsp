@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: Sachintha
-  Date: 13-Mar-21
-  Time: 10:29 PM
+  Date: 16-Mar-21
+  Time: 10:33 AM
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -17,12 +17,14 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
           integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>About</title>
+    <title>Products</title>
 </head>
 <body>
 <%@ include file="/includes/header.jsp" %>
 
-<p>igfirgfiegfueiweifhiweh</p>
+
+
+
 
 
 <%@ include file="/includes/footer.jsp" %>
