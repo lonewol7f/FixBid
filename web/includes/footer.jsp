@@ -44,9 +44,9 @@
                     <h5 class="heading">Company</h5>
                     <ul class="card-text">
                         <li>About Us</li>
-                        <li>Blog</li>
                         <li>Contact</li>
-                        <li>Join Us</li>
+                        <li><a style="color: inherit;text-decoration: none" href="${pageContext.request.contextPath}/jsp/register.jsp">Join Us</a></li>
+                        <li>Feedback</li>
                     </ul>
                 </div>
             </div>
