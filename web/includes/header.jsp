@@ -22,7 +22,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarMenu">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="/jsp/product.jsp" class="nav-link">Products</a></li>
+                <li class="nav-item"><a href="/jsp/about.jsp" class="nav-link">About</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
             </ul>
             <form class="form-inline">
