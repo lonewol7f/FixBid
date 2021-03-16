@@ -48,48 +48,50 @@
 
         <div class="row">
             <div class="col">
-                <label for="exampleFormControlTextarea1"> First Name </label>
-                <input type="text" class="form-control" placeholder="Enter Your First Name" required>
+                <label for="fname"> First Name </label>
+                <input type="text" name="fname" id="fname" class="form-control" placeholder="Enter Your First Name"
+                       required>
             </div>
             <div class="col">
-                <label for="exampleFormControlTextarea1"> Last Name </label>
-                <input type="text" class="form-control" placeholder="Enter Your Last Name" required>
+                <label for="lname"> Last Name </label>
+                <input type="text" name="lname" id="lname" class="form-control" placeholder="Enter Your Last Name"
+                       required>
             </div>
         </div>
 
         <div class="form-group">
-            <label for="exampleFormControlTextarea1"> Home Address </label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+            <label for="address"> Home Address </label>
+            <textarea class="form-control" name="address" id="address" rows="3"
                       placeholder="Enter Your Home Address " required></textarea>
         </div>
 
         <div class="row">
             <div class="col">
-                <label for="exampleFormControlTextarea1"> Mobile Number </label>
-                <input type="text" class="form-control" placeholder="Enter Your Mobile Number" required>
+                <label for="phoneNumber"> Mobile Number </label>
+                <input type="text" name="phoneNumber" id="phoneNumber" class="form-control" placeholder="Enter Your Mobile Number" required>
             </div>
             <div class="col">
-                <label for="exampleFormControlTextarea1"> E-mail </label>
-                <input type="text" class="form-control" placeholder="Enter Your E-mail Address"
+                <label for="email"> E-mail </label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter Your E-mail Address"
                        pattern="[a-zA-Z0-9.%+-]*{8}" required>
             </div>
         </div>
 
         <div class="form-group">
-            <label for="exampleInputPassword1"> Password </label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Your Password"
+            <label for="password"> Password </label>
+            <input type="password" name="password" class="form-control" id="password" placeholder="Enter Your Password"
                    required>
         </div>
 
         <div class="form-group">
-            <label for="exampleInputPassword1"> Re-Enter Password </label>
-            <input type="password" class="form-control" id="exampleInputPassword1"
+            <label for="cpassword"> Re-Enter Password </label>
+            <input type="password" name="cpassword" class="form-control" id="cpassword"
                    placeholder="Enter Your Password Again" required>
         </div>
 
         <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
-            <label class="form-check-label" for="exampleCheck1"> Accept Privacy & Policy Terms </label>
+            <input type="checkbox" class="form-check-input" name="terms" id="terms" required>
+            <label class="form-check-label" for="terms"> Accept Privacy & Policy Terms </label>
         </div>
 
         <br>
