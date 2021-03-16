@@ -5,16 +5,12 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <header>
-    <div class="container p-1">
+    <div class="container_top pt-2 pb-2">
         <div class="row">
-            <div class="col">
-                Call us: 077123456
-            </div>
-            <div class="col">
-                Send us an Email: fixbid@gmail.com
-            </div>
-            <div class="col" style="text-align: right;">
-                <button class ="btn bg-light p-1"><i class='far fa-heart'></i>&nbsp;&nbsp;<a>Wishlist</a></button>
+            <div class="col" style="text-align: right">
+                <button class ="btn bg-white mr-4"><i class='far fa-heart'></i>&nbsp;&nbsp;<a>Wishlist</a></button>
+                <button class ="btn btn-outline-info mr-4"><a>Log in</a></button>
+                <button class ="btn btn-info mr-3"><a>Sign up</a></button>
             </div>
         </div>
     </div>
