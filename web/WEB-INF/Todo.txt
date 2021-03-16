@@ -1,0 +1,2 @@
+1. Add isValid or isInvalid classes to feedback form (js)
+2. Decorate feedback page (background image, form border etc..)

@@ -46,7 +46,7 @@
                         <li>About Us</li>
                         <li>Contact</li>
                         <li><a style="color: inherit;text-decoration: none" href="${pageContext.request.contextPath}/jsp/register.jsp">Join Us</a></li>
-                        <li>Feedback</li>
+                        <li><a style="color: inherit;text-decoration: none" href="${pageContext.request.contextPath}/jsp/feedback.jsp">Feedback</a></li>
                     </ul>
                 </div>
             </div>

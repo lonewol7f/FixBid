@@ -94,9 +94,9 @@
 
         <br>
 
-        <button type="submit" class="btn btn-primary" style="background-color:#02457A;">Submit</button>
+        <button type="submit" class="btn btn-primary" id="reg_submit" style="background-color:#02457A;">Submit</button>
 
-        <button type="submit" class="btn btn-primary" style="background-color:tomato;">Cancel</button>
+        <button type="submit" class="btn btn-primary" id="reg_cancel" style="background-color:tomato;">Cancel</button>
 
     </form>
 

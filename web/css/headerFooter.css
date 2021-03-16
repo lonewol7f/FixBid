@@ -98,3 +98,7 @@ bg-light {
 button.bg-white:hover {
     background-color: rgba(218, 224, 229, 0) !important
 }
+
+textarea{
+    resize: none;
+}
