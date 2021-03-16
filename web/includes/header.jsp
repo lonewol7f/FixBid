@@ -5,12 +5,12 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <div class="container_top pt-2 pb-2">
-    <div class="row">
+    <div class="row" style="margin-right: inherit">
         <div class="col" style="text-align: right">
             <button class="btn bg-white mr-4"><i class='far fa-heart'></i>&nbsp;&nbsp;<a>Wishlist</a></button>
             <button class="btn btn-outline-info mr-4"><a>Log in</a></button>
             <a href="${pageContext.request.contextPath}/jsp/register.jsp">
-                <button class="btn btn-info mr-3">Sign
+                <button class="btn btn-info mr-1">Sign
                     up
                 </button>
             </a>
