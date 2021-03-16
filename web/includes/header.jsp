@@ -8,14 +8,15 @@
     <div class="container_top pt-2 pb-2">
         <div class="row">
             <div class="col" style="text-align: right">
-                <button class ="btn bg-white mr-4"><i class='far fa-heart'></i>&nbsp;&nbsp;<a>Wishlist</a></button>
-                <button class ="btn btn-outline-info mr-4"><a>Log in</a></button>
-                <button class ="btn btn-info mr-3"><a>Sign up</a></button>
+                <button class="btn bg-white mr-4"><i class='far fa-heart'></i>&nbsp;&nbsp;<a>Wishlist</a></button>
+                <button class="btn btn-outline-info mr-4"><a>Log in</a></button>
+                <a href="${pageContext.request.contextPath}/jsp/register.jsp"><button class="btn btn-info mr-3">Sign
+                    up</button></a>
             </div>
         </div>
     </div>
     <nav class="navbar navbar-expand-sm navbar-dark bg-blue py-4 sticky-top">
-        <a href="#" class="navbar-brand">Home</a>
+        <a href="${pageContext.request.contextPath}/index.jsp" class="navbar-brand">Home</a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
             <span class="navbar-toggler-icon"></span>
         </button>
