@@ -23,25 +23,28 @@
 <body>
 <%@ include file="/includes/header.jsp" %>
 
-<div class = "container mt-5" style="width:25%;">
-    <form action = "" method = "">
+<div class="container mt-5" style="width:25%;">
+    <form action="" method="">
 
         <img src="../images/User/Bid.png" style="width : 40%; height : 40%;">
 
-        <center> <h1> Login </h1> </center> <br> <br>
+        <center><h1> Login </h1></center>
+        <br> <br>
         <hr>
 
         <br>
 
         <div class="form-group">
 
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your E-mail Address" pattern="[a-zA-Z0-9.%+-]*{8}" required>
+            <input type="email" class="form-control login" id="exampleInputEmail1" aria-describedby="emailHelp"
+                   placeholder="Enter Your E-mail Address" pattern="[a-zA-Z0-9.%+-]*{8}" required>
 
         </div>
 
         <div class="form-group">
 
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Your Password" required>
+            <input type="password" class="form-control login" id="exampleInputPassword1" placeholder="Enter Your Password"
+                   required>
         </div>
 
         <div class="form-check">
@@ -49,10 +52,13 @@
             <label class="form-check-label" for="exampleCheck1"> Remember Me </label> <br> <br>
         </div>
 
-        <button type="submit" class="btn btn-primary" style="border-color: tomato; background-color: white; color: tomato; font-weight: bold; width: 100%; border: 4px tomato solid;"> Login </button>
+        <button type="submit" class="btn btn-primary"
+                style="border-color: tomato; background-color: white; color: tomato; font-weight: bold; width: 100%; border: 4px tomato solid;">
+            Login
+        </button>
 
         <br><br>
-        <div class = "div1">
+        <div class="div1">
             <a href="" style="color:darkred; font-weight: bold;"> Forgot Password </a>
         </div>
 
