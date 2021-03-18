@@ -42,13 +42,13 @@
             </a>
         </li>
         <li class="nav-item">
-            <a href="#" onclick="users()" class="nav-link text-dark font-italic">
+            <a href="#" onclick="users()" class="nav-link text-dark font-italic bg-light">
                 <i class="fa fa-users mr-3 text-primary fa-fw"></i>
                 Users
             </a>
         </li>
         <li class="nav-item">
-            <a href="#" onclick="feedBack()" class="nav-link text-dark font-italic">
+            <a href="#" onclick="feedBack()" class="nav-link text-dark font-italic bg-light">
                 <i class="fa fa-comments mr-3 text-primary fa-fw"></i>
                 Feedback
             </a>
@@ -59,27 +59,44 @@
 
     <ul class="nav flex-column bg-white mb-0">
         <li class="nav-item">
-            <a href="#" class="nav-link text-dark font-italic">
+            <a href="#" class="nav-link text-dark font-italic bg-light">
                 <i class="fa fa-area-chart mr-3 text-primary fa-fw"></i>
                 Area charts
             </a>
         </li>
         <li class="nav-item">
-            <a href="#" class="nav-link text-dark font-italic">
+            <a href="#" class="nav-link text-dark font-italic bg-light">
                 <i class="fa fa-bar-chart mr-3 text-primary fa-fw"></i>
                 Bar charts
             </a>
         </li>
         <li class="nav-item">
-            <a href="#" class="nav-link text-dark font-italic">
+            <a href="#" class="nav-link text-dark font-italic bg-light">
                 <i class="fa fa-pie-chart mr-3 text-primary fa-fw"></i>
                 Pie charts
             </a>
         </li>
         <li class="nav-item">
-            <a href="#" class="nav-link text-dark font-italic">
+            <a href="#" class="nav-link text-dark font-italic bg-light">
                 <i class="fa fa-line-chart mr-3 text-primary fa-fw"></i>
                 Line charts
+            </a>
+        </li>
+    </ul>
+
+    <p class="text-gray font-weight-bold text-uppercase px-3 small py-4 mb-0">Utility</p>
+
+    <ul class="nav flex-column bg-white mb-0">
+        <li class="nav-item">
+            <a href="#" class="nav-link text-dark font-italic bg-light">
+                <i class="fas fa-user mr-3 text-primary fa-fw"></i>
+                Profile
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link text-dark font-italic bg-light">
+                <i class="fas fa-sign-out-alt mr-3 text-primary fa-fw"></i>
+                Log Out
             </a>
         </li>
     </ul>
