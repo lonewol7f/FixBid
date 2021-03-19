@@ -216,8 +216,36 @@
         dictum ligula ut dapibus hendrerit. Proin vitae lorem tempor dui finibus vulputate.
     </div>
     <div id="feedback-div" style="display: none">
-        <h1>Feedback</h1>
+        <h1 class="mb-5">Feedback</h1>
+        <h3>Content</h3>
+        <hr>
+        <p class="mb-1"><i class="far fa-link text-muted fa-fw"></i>&nbsp;&nbsp;<a
+                class="text-primary font-italic text-monospace" href="#fb_all" style="text-decoration: inherit">All
+            feedbacks</a>
+        </p>
+        <p class="mb-1"><i class="far fa-link text-muted fa-fw"></i>&nbsp;&nbsp;<a
+                class="text-primary font-italic text-monospace" href="#fb_suggest" style="text-decoration: inherit">Suggestions</a>
+        </p>
+        <p class="mb-1"><i class="far fa-link text-muted fa-fw"></i>&nbsp;&nbsp;<a
+                class="text-primary font-italic text-monospace" href="#fb_complain" style="text-decoration: inherit">Complains</a>
+        </p>
+
+        <hr>
+        <br>
+        <div id="fb_all">
+            <h3>All Feedbacks</h3>
+
+        </div>
+        <div id="fb_suggest">
+            <h3>Suggestions</h3>
+
+        </div>
+        <div id="fb_complain">
+            <h3>Complains</h3>
+
+        </div>
     </div>
+
     <div class="btt" id="back-to-top">
         <a href="#"><i class="far fa-chevron-up"></i></a>
     </div>
