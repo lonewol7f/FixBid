@@ -20,7 +20,7 @@
 </head>
 <body>
 <%@ include file="/includes/header.jsp" %>
-<form action="" class="main-form needs-validation">
+<form action="addFeedback" method="post" class="main-form needs-validation">
     <div class="row">
         <div class="col">
             <h2><strong>How are we doing?</strong></h2>
@@ -42,8 +42,8 @@
     <div class="form-group">
         <label for="type">Type</label>
         <select name="type" id="type" class="form-control">
-            <option selected value="Suggestions">Suggestions</option>
-            <option value="Complaint">Complaint</option>
+            <option selected value="Suggestion">Suggestion</option>
+            <option value="Complain">Complain</option>
         </select>
     </div>
     <div class="form-group">
