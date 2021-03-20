@@ -282,11 +282,89 @@
 
         </div>
         <div id="fb_suggest">
-            <h3>Suggestions</h3>
+            <h3>Suggestions</h3><br>
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th scope="col">Feedback ID</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Comment</th>
+                    <th scope="col">Submitted</th>
+                    <th scope="col"></th>
+                </tr>
+                </thead>
+                <tbody>
+                <%
+                     arrayList = FeedbackDBUtil.suggestFeedback();
+
+                    for (Feedback feedback : arrayList) {
+                %>
+                <tr>
+                    <th scope="row"><%=feedback.getFeedbackID() %>
+                    </th>
+                    <td><%=feedback.getEmail() %>
+                    </td>
+                    <td style="word-wrap: break-word;min-width: 160px;max-width: 160px;"><%=feedback.getComment() %>
+                    </td>
+                    <td><%=feedback.getCreated() %>
+                    </td>
+                    <td>
+                        <form method="POST" action="deleteFeedback">
+                            <input type="hidden" name="feedbackID" value="<%=feedback.getFeedbackID()%>"/>
+                            <button type="submit" value="<%=feedback.getFeedbackID()%>" class="btn btn-danger">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+                <%
+                    }
+                %>
+                </tbody>
+            </table>
 
         </div>
         <div id="fb_complain">
-            <h3>Complains</h3>
+            <h3>Complains</h3><br>
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th scope="col">Feedback ID</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Comment</th>
+                    <th scope="col">Submitted</th>
+                    <th scope="col"></th>
+                </tr>
+                </thead>
+                <tbody>
+                <%
+                    arrayList = FeedbackDBUtil.complainFeedback();
+
+                    for (Feedback feedback : arrayList) {
+                %>
+                <tr>
+                    <th scope="row"><%=feedback.getFeedbackID() %>
+                    </th>
+                    <td><%=feedback.getEmail() %>
+                    </td>
+                    <td style="word-wrap: break-word;min-width: 160px;max-width: 160px;"><%=feedback.getComment() %>
+                    </td>
+                    <td><%=feedback.getCreated() %>
+                    </td>
+                    <td>
+                        <form method="POST" action="deleteFeedback">
+                            <input type="hidden" name="feedbackID" value="<%=feedback.getFeedbackID()%>"/>
+                            <button type="submit" value="<%=feedback.getFeedbackID()%>" class="btn btn-danger">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+                <%
+                    }
+                %>
+                </tbody>
+            </table>
 
         </div>
     </div>
