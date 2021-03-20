@@ -13,4 +13,13 @@
         <url-pattern>/jsp/addFeedback</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>deleteFeedback</servlet-name>
+        <servlet-class>servlets.deleteFeedbackServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>deleteFeedback</servlet-name>
+        <url-pattern>/jsp/deleteFeedback</url-pattern>
+    </servlet-mapping>
+
 </web-app>

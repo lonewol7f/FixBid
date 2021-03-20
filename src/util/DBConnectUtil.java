@@ -2,6 +2,7 @@ package util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.SQLException;
 
 public class DBConnectUtil {
 
@@ -19,12 +20,18 @@ public class DBConnectUtil {
     private static final String password = "FixBid@2021";
     private static Connection conn;
 
-    public static Connection getConnection() {
+    /**
+     * This method use for get connect with database
+     *
+     * @return conn
+     * @throws ClassNotFoundException Thrown when an application tries to load in a class through its string name using
+     */
+    public static Connection getConnection() throws ClassNotFoundException {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             conn = DriverManager.getConnection(url, username, password);
-        } catch (Exception e) {
-            System.out.println("Database Connection not success: " + e.toString());
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
 
         return conn;
