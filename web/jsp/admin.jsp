@@ -42,13 +42,13 @@
             </a>
         </li>
         <li class="nav-item">
-            <a href="#" onclick="users()" class="nav-link text-dark font-italic">
+            <a href="#" onclick="users()" class="nav-link text-dark font-italic bg-light">
                 <i class="fa fa-users mr-3 text-primary fa-fw"></i>
                 Users
             </a>
         </li>
         <li class="nav-item">
-            <a href="#" onclick="feedBack()" class="nav-link text-dark font-italic">
+            <a href="#" onclick="feedBack()" class="nav-link text-dark font-italic bg-light">
                 <i class="fa fa-comments mr-3 text-primary fa-fw"></i>
                 Feedback
             </a>
@@ -59,27 +59,44 @@
 
     <ul class="nav flex-column bg-white mb-0">
         <li class="nav-item">
-            <a href="#" class="nav-link text-dark font-italic">
+            <a href="#" class="nav-link text-dark font-italic bg-light">
                 <i class="fa fa-area-chart mr-3 text-primary fa-fw"></i>
                 Area charts
             </a>
         </li>
         <li class="nav-item">
-            <a href="#" class="nav-link text-dark font-italic">
+            <a href="#" class="nav-link text-dark font-italic bg-light">
                 <i class="fa fa-bar-chart mr-3 text-primary fa-fw"></i>
                 Bar charts
             </a>
         </li>
         <li class="nav-item">
-            <a href="#" class="nav-link text-dark font-italic">
+            <a href="#" class="nav-link text-dark font-italic bg-light">
                 <i class="fa fa-pie-chart mr-3 text-primary fa-fw"></i>
                 Pie charts
             </a>
         </li>
         <li class="nav-item">
-            <a href="#" class="nav-link text-dark font-italic">
+            <a href="#" class="nav-link text-dark font-italic bg-light">
                 <i class="fa fa-line-chart mr-3 text-primary fa-fw"></i>
                 Line charts
+            </a>
+        </li>
+    </ul>
+
+    <p class="text-gray font-weight-bold text-uppercase px-3 small py-4 mb-0">Utility</p>
+
+    <ul class="nav flex-column bg-white mb-0">
+        <li class="nav-item">
+            <a href="#" class="nav-link text-dark font-italic bg-light">
+                <i class="fas fa-user mr-3 text-primary fa-fw"></i>
+                Profile
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link text-dark font-italic bg-light">
+                <i class="fas fa-sign-out-alt mr-3 text-primary fa-fw"></i>
+                Log Out
             </a>
         </li>
     </ul>
@@ -199,8 +216,36 @@
         dictum ligula ut dapibus hendrerit. Proin vitae lorem tempor dui finibus vulputate.
     </div>
     <div id="feedback-div" style="display: none">
-        <h1>Feedback</h1>
+        <h1 class="mb-5">Feedback</h1>
+        <h3>Content</h3>
+        <hr>
+        <p class="mb-1"><i class="far fa-link text-muted fa-fw"></i>&nbsp;&nbsp;<a
+                class="text-primary font-italic text-monospace" href="#fb_all" style="text-decoration: inherit">All
+            feedbacks</a>
+        </p>
+        <p class="mb-1"><i class="far fa-link text-muted fa-fw"></i>&nbsp;&nbsp;<a
+                class="text-primary font-italic text-monospace" href="#fb_suggest" style="text-decoration: inherit">Suggestions</a>
+        </p>
+        <p class="mb-1"><i class="far fa-link text-muted fa-fw"></i>&nbsp;&nbsp;<a
+                class="text-primary font-italic text-monospace" href="#fb_complain" style="text-decoration: inherit">Complains</a>
+        </p>
+
+        <hr>
+        <br>
+        <div id="fb_all">
+            <h3>All Feedbacks</h3>
+
+        </div>
+        <div id="fb_suggest">
+            <h3>Suggestions</h3>
+
+        </div>
+        <div id="fb_complain">
+            <h3>Complains</h3>
+
+        </div>
     </div>
+
     <div class="btt" id="back-to-top">
         <a href="#"><i class="far fa-chevron-up"></i></a>
     </div>
