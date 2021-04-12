@@ -23,7 +23,7 @@ public class DBConnectUtil {
     /**
      * This method use for get connect with database
      *
-     * @return conn
+     * @return conn (Connection)
      * @throws ClassNotFoundException Thrown when an application tries to load in a class through its string name using
      */
     public static Connection getConnection() throws ClassNotFoundException {
