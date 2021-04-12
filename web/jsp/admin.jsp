@@ -27,7 +27,7 @@
 <div class="vertical-nav bg-white" id="sidebar">
     <div class="py-4 px-3 mb-4 bg-light">
         <div class="media d-flex align-items-center"><img
-                src="#" alt="..." width="65"
+                src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="..." width="65"
                 class="mr-3 rounded-circle img-thumbnail shadow-sm">
             <div class="media-body">
                 <h4 class="m-0">Name</h4>
@@ -91,7 +91,7 @@
 
     <ul class="nav flex-column bg-white mb-0">
         <li class="nav-item">
-            <a href="#" class="nav-link text-dark font-italic bg-light">
+            <a href="#" onclick="profile()" class="nav-link text-dark font-italic bg-light">
                 <i class="fas fa-user mr-3 text-primary fa-fw"></i>
                 Profile
             </a>
@@ -295,7 +295,7 @@
                 </thead>
                 <tbody>
                 <%
-                     arrayList = FeedbackDBUtil.suggestFeedback();
+                    arrayList = FeedbackDBUtil.suggestFeedback();
 
                     for (Feedback feedback : arrayList) {
                 %>
@@ -366,6 +366,114 @@
                 </tbody>
             </table>
 
+        </div>
+    </div>
+    <div id="profile-div" style="display: none">
+        <div class="container">
+            <div class="row gutters">
+                <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="account-settings">
+                                <div class="user-profile">
+                                    <div class="user-avatar">
+                                        <img class="img-thumbnail" style="border: 0"
+                                             src="https://drive.google.com/uc?export=view&id=1dv8IICz-DBlOMhzsT2aVg2LZ42H-ORzl"
+                                             alt="Admin">
+                                    </div>
+                                    <div style="text-align: center; margin-top: 30px">
+                                        <h5>Name</h5>
+                                        <h6>Email</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <form action="updateAdmin" method="post">
+                                <div class="row gutters">
+                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                        <h6 class="mb-2 text-primary">Personal Details</h6>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                        <div class="form-group">
+                                            <label for="firstName">First Name</label>
+                                            <input type="text" class="form-control" name="firstName" id="firstName"
+                                                   placeholder="Enter first name">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                        <div class="form-group">
+                                            <label for="lastName">Last Name</label>
+                                            <input type="text" class="form-control" name="lastName" id="lastName"
+                                                   placeholder="Enter last Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                        <div class="form-group">
+                                            <label for="email">Email</label>
+                                            <input type="email" class="form-control" name="email" id="email"
+                                                   placeholder="Enter email ID" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                        <div class="form-group">
+                                            <label for="phoneNo">Phone Number</label>
+                                            <input type="text" class="form-control" id="phoneNo" placeholder="phone No">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row gutters">
+                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                        <h6 class="mt-3 mb-2 text-primary">Address</h6>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                        <div class="form-group">
+                                            <label for="street">Street</label>
+                                            <input type="text" class="form-control" name="street" id="street"
+                                                   placeholder="Enter Street">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                        <div class="form-group">
+                                            <label for="city">City</label>
+                                            <input type="text" class="form-control" name="city" id="city"
+                                                   placeholder="Enter City">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                        <div class="form-group">
+                                            <label for="state">State/Province</label>
+                                            <input type="text" class="form-control" name="state" id="state"
+                                                   placeholder="Enter State">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                        <div class="form-group">
+                                            <label for="zip">Zip Code</label>
+                                            <input type="text" class="form-control" name="zip" id="zip"
+                                                   placeholder="Zip Code">
+                                        </div>
+                                    </div>
+                                    <input type="hidden" id="adminId" name="adminId">
+                                </div>
+                                <div class="row gutters">
+                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                        <div class="text-right">
+                                            <button type="submit" id="update" name="update" class="btn btn-primary">
+                                                Update
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
