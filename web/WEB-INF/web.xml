@@ -22,4 +22,13 @@
         <url-pattern>/jsp/deleteFeedback</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>updateAdmin</servlet-name>
+        <servlet-class>servlets.updateAdminServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>updateAdmin</servlet-name>
+        <url-pattern>/jsp/updateAdmin</url-pattern>
+    </servlet-mapping>
+
 </web-app>
