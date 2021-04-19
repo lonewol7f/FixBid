@@ -26,8 +26,6 @@
 <div class="container mt-5" style="width:25%;">
     <form action="" method="">
 
-        <img src="../images/User/Bid.png" style="width : 40%; height : 40%;">
-
         <center><h1> Login </h1></center>
         <br> <br>
         <hr>
@@ -36,24 +34,26 @@
 
         <div class="form-group">
 
-            <input type="email" class="form-control login" id="exampleInputEmail1" aria-describedby="emailHelp"
+            <input type="email" class="form-control login" id="lgmail" name = "lgmail" aria-describedby="emailHelp"
                    placeholder="Enter Your E-mail Address" pattern="[a-zA-Z0-9.%+-]*{8}" required>
 
         </div>
 
         <div class="form-group">
 
-            <input type="password" class="form-control login" id="exampleInputPassword1" placeholder="Enter Your Password"
+            <input type="password" class="form-control login" id="lgpassword" name="lgpassword" placeholder="Enter Your Password"
                    required>
         </div>
 
         <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1"> Remember Me </label> <br> <br>
+            <input class="form-check-input" type="radio" name="checkT" id="checkU" value="option1" checked style="position: absolute; left: 31%">
+            <label class="form-check-label" for="checkU" style="position: absolute; left: 30%"> User </label>
+            <input class="form-check-input" type="radio" name="checkT" id="checkA" value="option2" style="position: absolute; left: 60%">
+            <label class="form-check-label" for="checkA" style="position: absolute; left: 61%"> Admin </label> <br/><br/>
         </div>
 
         <button type="submit" class="btn btn-primary"
-                style="border-color: tomato; background-color: white; color: tomato; font-weight: bold; width: 100%; border: 4px tomato solid;">
+                style="border-color: tomato; background-color: white; color: tomato; font-weight: bold; width: 100%; border: 4px tomato solid;" id="lgbtn" name="lgbtn">
             Login
         </button>
 
