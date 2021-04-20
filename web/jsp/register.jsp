@@ -48,13 +48,13 @@
 
         <div class="row">
             <div class="col">
-                <label for="fname"> First Name </label>
-                <input type="text" name="fname" id="fname" class="form-control" placeholder="Enter Your First Name"
+                <label for="FName"> First Name </label>
+                <input type="text" name="FName" id="FName" class="form-control" placeholder="Enter Your First Name"
                        required>
             </div>
             <div class="col">
-                <label for="lname"> Last Name </label>
-                <input type="text" name="lname" id="lname" class="form-control" placeholder="Enter Your Last Name"
+                <label for="LName"> Last Name </label>
+                <input type="text" name="LName" id="LName" class="form-control" placeholder="Enter Your Last Name"
                        required>
             </div>
         </div>
@@ -84,8 +84,8 @@
         </div>
 
         <div class="form-group">
-            <label for="cpassword"> Re-Enter Password </label>
-            <input type="password" name="cpassword" class="form-control" id="cpassword"
+            <label for="RePassword"> Re-Enter Password </label>
+            <input type="password" name="RePassword" class="form-control" id="RePassword"
                    placeholder="Enter Your Password Again" required>
         </div>
 
