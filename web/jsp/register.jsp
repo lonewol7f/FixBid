@@ -21,7 +21,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/headerFooter.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/FixBid_Registration.css">
-    <script src="${pageContext.request.contextPath}/js/register.js"></script>
     <title> FixBid Registration </title>
 </head>
 <body>
@@ -42,7 +41,7 @@
 
 <div class="container mt-5" style="background-color: whitesmoke; width : 50%">
 
-    <form action="" method="" onsubmit="return checkPassword()">
+    <form action="" method="">
 
         <center><h1> FixBid Registration </h1></center>
         <hr>
@@ -79,20 +78,20 @@
         </div>
 
         <div class="form-group">
-            <label for="pwd"> Password </label>
-            <input type="password" name="pwd" class="form-control" id="pwd" placeholder="Enter Your Password"
+            <label for="password"> Password </label>
+            <input type="password" name="password" class="form-control" id="password" placeholder="Enter Your Password"
                    required>
         </div>
 
         <div class="form-group">
-            <label for="rpwd"> Re-Enter Password </label>
-            <input type="password" name="rpwd" class="form-control" id="rpwd"
+            <label for="cpassword"> Re-Enter Password </label>
+            <input type="password" name="cpassword" class="form-control" id="cpassword"
                    placeholder="Enter Your Password Again" required>
         </div>
 
         <div class="form-check">
-            <input type="checkbox" class="form-check-input" name="policy" id="policy" required onclick = "enableButton()">
-            <label class="form-check-label" for="policy"> Accept Privacy & Policy Terms </label>
+            <input type="checkbox" class="form-check-input" name="terms" id="terms" required>
+            <label class="form-check-label" for="terms"> Accept Privacy & Policy Terms </label>
         </div>
 
         <br>
