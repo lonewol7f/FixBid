@@ -24,7 +24,7 @@
 <%@ include file="/includes/header.jsp" %>
 
 <div class="container mt-5" style="width:25%;">
-    <form action="" method="">
+    <form action="" method="post">
 
         <center><h1> Login </h1></center>
         <br> <br>
@@ -34,26 +34,25 @@
 
         <div class="form-group">
 
-            <input type="email" class="form-control login" id="lgmail" name = "lgmail" aria-describedby="emailHelp"
+            <input type="email" class="form-control login" id="email1" name = "email1" aria-describedby="emailHelp"
                    placeholder="Enter Your E-mail Address" pattern="[a-zA-Z0-9.%+-]*{8}" required>
 
         </div>
 
         <div class="form-group">
 
-            <input type="password" class="form-control login" id="lgpassword" name="lgpassword" placeholder="Enter Your Password"
+            <input type="password" class="form-control login" id="password1" name="password1" placeholder="Enter Your Password"
                    required>
         </div>
 
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="checkT" id="checkU" value="option1" checked style="position: absolute; left: 31%">
-            <label class="form-check-label" for="checkU" style="position: absolute; left: 30%"> User </label>
-            <input class="form-check-input" type="radio" name="checkT" id="checkA" value="option2" style="position: absolute; left: 60%">
-            <label class="form-check-label" for="checkA" style="position: absolute; left: 61%"> Admin </label> <br/><br/>
+            <input type="checkbox" class="form-check-input" id="check1">
+            <label class="form-check-label" for="check1"> Admin </label>
+            <small id="msg" class="form-text text-muted"> Check this for Admin Login Only </small><br>
         </div>
 
         <button type="submit" class="btn btn-primary"
-                style="border-color: tomato; background-color: white; color: tomato; font-weight: bold; width: 100%; border: 4px tomato solid;" id="lgbtn" name="lgbtn">
+                style="border-color: tomato; background-color: white; color: tomato; font-weight: bold; width: 100%; border: 4px tomato solid;" id="btn1" name="btn1">
             Login
         </button>
 
