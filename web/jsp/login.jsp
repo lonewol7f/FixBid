@@ -46,7 +46,7 @@
         </div>
 
         <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="check1" name="check1">
+            <input type="checkbox" class="form-check-input" id="check1" name="check1" value="admin">
             <label class="form-check-label" for="check1"> Admin </label>
             <small id="msg" class="form-text text-muted"> Check this for Admin Login Only </small><br>
         </div>
