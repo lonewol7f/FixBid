@@ -44,17 +44,17 @@ public class UserDBUtil {
         return status;
     }
 
-    public static boolean userLogin(String email, String password) {
+    public static boolean userLogin(String email1, String password1) {
         boolean status = false;
         try {
             conn = DBConnectUtil.getConnection();
             stmt = conn.createStatement();
 
-            String sql = "SELECT password FROM user WHERE email ='" + email + "'";
+            String sql = "SELECT password FROM user WHERE email ='" + email1 + "'";
             rs = stmt.executeQuery(sql);
 
             while (rs.next()) {
-                if (password.equals(rs.getString(1))) {
+                if (password1.equals(rs.getString(1))) {
                     status = true;
                 }
             }
