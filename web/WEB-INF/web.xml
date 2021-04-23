@@ -49,4 +49,14 @@
         <url-pattern>/jsp/loginSer</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>logout</servlet-name>
+        <servlet-class>servlets.logoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>logout</servlet-name>
+        <url-pattern>/jsp/logout</url-pattern>
+    </servlet-mapping>
+
+
 </web-app>
