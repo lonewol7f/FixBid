@@ -40,4 +40,13 @@
         <url-pattern>/jsp/registerSer</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>loginSer</servlet-name>
+        <servlet-class>servlets.loginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>loginSer</servlet-name>
+        <url-pattern>/jsp/loginSer</url-pattern>
+    </servlet-mapping>
+
 </web-app>
