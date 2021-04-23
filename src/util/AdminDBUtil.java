@@ -76,12 +76,12 @@ public class AdminDBUtil {
      * This performs update admin's user details
      *
      * @param firstName first name of the admin
-     * @param lastName last name of the admin
-     * @param phoneNo phone number of the admin
-     * @param street street for the admin's address
-     * @param city city for the admin's address
-     * @param state state for the admin's address
-     * @param zip ZIP code for the admin's address
+     * @param lastName  last name of the admin
+     * @param phoneNo   phone number of the admin
+     * @param street    street for the admin's address
+     * @param city      city for the admin's address
+     * @param state     state for the admin's address
+     * @param zip       ZIP code for the admin's address
      * @return isSuccess (boolean)
      * @see DBConnectUtil#getConnection()
      */
@@ -92,21 +92,50 @@ public class AdminDBUtil {
         try {
             conn = DBConnectUtil.getConnection();
             PreparedStatement ps = conn.prepareStatement("UPDATE admin SET firstName=?, lastName=?, phoneNo=?, street=?, city=?, state=?, zip=? WHERE adminId=?");
-            ps.setString(1,firstName);
-            ps.setString(2,lastName);
-            ps.setString(3,phoneNo);
-            ps.setString(4,street);
-            ps.setString(5,city);
-            ps.setString(6,state);
-            ps.setInt(7,zip);
+            ps.setString(1, firstName);
+            ps.setString(2, lastName);
+            ps.setString(3, phoneNo);
+            ps.setString(4, street);
+            ps.setString(5, city);
+            ps.setString(6, state);
+            ps.setInt(7, zip);
             ps.setInt(8, adminId);
 
             int rs = ps.executeUpdate();
 
-            if (rs != 0){
+            if (rs != 0) {
                 isSuccess = true;
             }
-        }catch (ClassNotFoundException | SQLException e){
+        } catch (ClassNotFoundException | SQLException e) {
+            e.printStackTrace();
+        }
+
+        return isSuccess;
+    }
+
+    /**
+     * This performs login to admin profile
+     *
+     * @param email username(email) of the admin
+     * @param password password of the admin account
+     * @return isSuccess (boolean)
+     */
+    public static boolean logIn(String email, String password) {
+        boolean isSuccess = false;
+
+        try {
+            conn = DBConnectUtil.getConnection();
+            stmt = conn.createStatement();
+
+            String sql = "SELECT passwd FROM admin WHERE email='" + email + "'";
+
+            rs = stmt.executeQuery(sql);
+
+            if (password.equals(rs.getString(1))) {
+                isSuccess = true;
+            }
+
+        } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
         }
 
