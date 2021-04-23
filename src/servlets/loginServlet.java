@@ -15,12 +15,12 @@ import java.io.IOException;
 public class loginServlet extends HttpServlet {
         protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-            String email = request.getParameter("email");
-            String password = request.getParameter("password");
+            String email1 = request.getParameter("email1");
+            String password1 = request.getParameter("password1");
 
-            if (UserDBUtil.userLogin(email, password)) {
+            if (UserDBUtil.userLogin(email1, password1)) {
                 HttpSession session = request.getSession();
-                session.setAttribute("email", email);
+                session.setAttribute("email1", email1);
 
                 RequestDispatcher dispatcher =request.getRequestDispatcher("/userProfile.jsp");
                 dispatcher.forward(request, response);
