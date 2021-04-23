@@ -1,5 +1,6 @@
 package servlets;
 
+import util.AdminDBUtil;
 import util.UserDBUtil;
 
 import javax.servlet.RequestDispatcher;
@@ -17,16 +18,31 @@ public class loginServlet extends HttpServlet {
 
             String email1 = request.getParameter("email1");
             String password1 = request.getParameter("password1");
+            String isAdmin = request.getParameter("check1");
 
-            if (UserDBUtil.userLogin(email1, password1)) {
-                HttpSession session = request.getSession();
-                session.setAttribute("email1", email1);
+            if (isAdmin == null) {
+                if (UserDBUtil.userLogin(email1, password1)) {
+                    HttpSession session = request.getSession();
+                    session.setAttribute("email1", email1);
 
-                RequestDispatcher dispatcher =request.getRequestDispatcher("/userProfile.jsp");
-                dispatcher.forward(request, response);
-                System.out.println("Login Success");
-            }else {
-                System.out.println("Login Unsuccess");
+                    RequestDispatcher dispatcher = request.getRequestDispatcher("/jsp/userProfile.jsp");
+                    dispatcher.forward(request, response);
+                    System.out.println("Login Success");
+                } else {
+                    System.out.println("Login Unsuccessful");
+                }
+            } else {
+                if (AdminDBUtil.logIn(email1, password1)){
+                    HttpSession session = request.getSession();
+                    session.setAttribute("email", email1);
+
+                    RequestDispatcher dispatcher = request.getRequestDispatcher("/jsp/admin.jsp");
+                    dispatcher.forward(request,response);
+                    System.out.println("Login Success");
+                } else {
+                    System.out.println("Login Unsuccessful");
+                }
+
             }
 
         }
