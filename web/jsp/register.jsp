@@ -41,20 +41,40 @@
 
 <div class="container mt-5" style="background-color: whitesmoke; width : 50%">
 
-    <form action="" method="">
+    <form action="registerSer" method="post">
 
         <center><h1> FixBid Registration </h1></center>
         <hr>
+        <label for = "FName"> Account Type </label>
 
         <div class="row">
             <div class="col">
-                <label for="fname"> First Name </label>
-                <input type="text" name="fname" id="fname" class="form-control" placeholder="Enter Your First Name"
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="Radios" id="UAcc" value="user" checked>
+                    <label class="form-check-label" for="UAcc">
+                        User Account
+                    </label>
+                </div>
+
+            </div>
+            <div class="col">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="Radios" id="VAcc" value="vendor">
+                    <label class="form-check-label" for="VAcc">
+                        Vendor Account
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="FName"> First Name </label>
+                <input type="text" name="FName" id="FName" class="form-control" placeholder="Enter Your First Name"
                        required>
             </div>
             <div class="col">
-                <label for="lname"> Last Name </label>
-                <input type="text" name="lname" id="lname" class="form-control" placeholder="Enter Your Last Name"
+                <label for="LName"> Last Name </label>
+                <input type="text" name="LName" id="LName" class="form-control" placeholder="Enter Your Last Name"
                        required>
             </div>
         </div>
@@ -84,8 +104,8 @@
         </div>
 
         <div class="form-group">
-            <label for="cpassword"> Re-Enter Password </label>
-            <input type="password" name="cpassword" class="form-control" id="cpassword"
+            <label for="RePassword"> Re-Enter Password </label>
+            <input type="password" name="RePassword" class="form-control" id="RePassword"
                    placeholder="Enter Your Password Again" required>
         </div>
 
@@ -98,7 +118,7 @@
 
         <button type="submit" class="btn btn-primary" id="reg_submit" style="background-color:#02457A;">Submit</button>
 
-        <button type="submit" class="btn btn-primary" id="reg_cancel" style="background-color:tomato;">Cancel</button>
+        <button type="reset" class="btn btn-primary" id="reg_cancel" style="background-color:tomato;">Cancel</button>
 
     </form>
 
