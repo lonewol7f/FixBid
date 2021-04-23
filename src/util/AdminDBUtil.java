@@ -130,9 +130,10 @@ public class AdminDBUtil {
             String sql = "SELECT passwd FROM admin WHERE email='" + email + "'";
 
             rs = stmt.executeQuery(sql);
-
-            if (password.equals(rs.getString(1))) {
-                isSuccess = true;
+            while (rs.next()) {
+                if (password.equals(rs.getString(1))) {
+                    isSuccess = true;
+                }
             }
 
         } catch (ClassNotFoundException | SQLException e) {
