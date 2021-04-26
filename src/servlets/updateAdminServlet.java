@@ -2,6 +2,7 @@ package servlets;
 
 import util.AdminDBUtil;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -31,6 +32,8 @@ public class updateAdminServlet extends HttpServlet {
         }else {
             System.out.println("Something went wrong!!!"); // Testing only
         }
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/jsp/admin.jsp");
+        dispatcher.forward(request,response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

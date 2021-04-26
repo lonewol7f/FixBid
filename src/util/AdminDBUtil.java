@@ -16,19 +16,19 @@ public class AdminDBUtil {
     /**
      * This performs get single record of an admin
      *
-     * @param adminId id of the admin
+     * @param email email of the admin
      * @return admin (Admin)
      * @see #getAdmin(Admin)
      * @see DBConnectUtil#getConnection()
      */
-    public static Admin getSingleAdmin(int adminId) {
+    public static Admin getSingleAdmin(String email) {
         Admin admin = new Admin();
 
         try {
             conn = DBConnectUtil.getConnection();
             stmt = conn.createStatement();
 
-            String sql = "SELECT * FROM admin WHERE adminId='" + adminId + "'";
+            String sql = "SELECT * FROM admin WHERE email='" + email + "'";
 
             rs = stmt.executeQuery(sql);
             while (rs.next()) {
@@ -148,7 +148,7 @@ public class AdminDBUtil {
      *
      * @param admin object of the Admin
      * @throws SQLException Thrown when database access error occurs or this method is called on a closed connection
-     * @see #getSingleAdmin(int)
+     * @see #getSingleAdmin(String)
      * @see #listAdmin()
      */
     private static void getAdmin(Admin admin) throws SQLException {
