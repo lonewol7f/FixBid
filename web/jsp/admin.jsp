@@ -1,6 +1,8 @@
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="model.Feedback" %>
 <%@ page import="util.FeedbackDBUtil" %>
+<%@ page import="model.Admin" %>
+<%@ page import="util.AdminDBUtil" %>
 <%--
   User: lonewol7f
   Date: 3/16/2021
@@ -21,16 +23,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="${pageContext.request.contextPath}/js/admin.js"></script>
     <title>Dashboard</title>
+    <%
+        Admin admin = AdminDBUtil.getSingleAdmin((String) session.getAttribute("email"));
+    %>
 </head>
 <body>
 <%--Vertical navigation bar start--%>
 <div class="vertical-nav bg-white" id="sidebar">
     <div class="py-4 px-3 mb-4 bg-light">
         <div class="media d-flex align-items-center"><img
-                src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="..." width="65"
+                src="<%=admin.getProfilePic() %>" alt="..." width="65"
                 class="mr-3 rounded-circle img-thumbnail shadow-sm">
             <div class="media-body">
-                <h4 class="m-0">Name</h4>
+                <h4 class="m-0"><%=admin.getFirstName() + " " + admin.getLastName() %>
+                </h4>
             </div>
         </div>
     </div>
@@ -97,7 +103,7 @@
             </a>
         </li>
         <li class="nav-item">
-            <a href="#" class="nav-link text-dark font-italic bg-light">
+            <a href="logout" class="nav-link text-dark font-italic bg-light">
                 <i class="fas fa-sign-out-alt mr-3 text-primary fa-fw"></i>
                 Log Out
             </a>
@@ -378,12 +384,14 @@
                                 <div class="user-profile">
                                     <div class="user-avatar">
                                         <img class="img-thumbnail" style="border: 0"
-                                             src="https://drive.google.com/uc?export=view&id=1dv8IICz-DBlOMhzsT2aVg2LZ42H-ORzl"
+                                             src="<%=admin.getProfilePic() %>"
                                              alt="Admin">
                                     </div>
                                     <div style="text-align: center; margin-top: 30px">
-                                        <h5>Name</h5>
-                                        <h6>Email</h6>
+                                        <h5><%=admin.getFirstName() + " " + admin.getLastName() %>
+                                        </h5>
+                                        <h6><%=admin.getEmail() %>
+                                        </h6>
                                     </div>
                                 </div>
                             </div>
@@ -402,27 +410,28 @@
                                         <div class="form-group">
                                             <label for="firstName">First Name</label>
                                             <input type="text" class="form-control" name="firstName" id="firstName"
-                                                   placeholder="Enter first name">
+                                                   value="<%=admin.getFirstName() %>">
                                         </div>
                                     </div>
                                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                         <div class="form-group">
                                             <label for="lastName">Last Name</label>
                                             <input type="text" class="form-control" name="lastName" id="lastName"
-                                                   placeholder="Enter last Name">
+                                                   value="<%=admin.getLastName() %>">
                                         </div>
                                     </div>
                                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                         <div class="form-group">
                                             <label for="email">Email</label>
                                             <input type="email" class="form-control" name="email" id="email"
-                                                   placeholder="Enter email ID" disabled>
+                                                   value="<%=admin.getEmail() %>" disabled>
                                         </div>
                                     </div>
                                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                         <div class="form-group">
                                             <label for="phoneNo">Phone Number</label>
-                                            <input type="text" class="form-control" id="phoneNo" placeholder="phone No">
+                                            <input type="text" class="form-control" id="phoneNo" name="phoneNo"
+                                                   value="<%=admin.getPhoneNo() %>">
                                         </div>
                                     </div>
                                 </div>
@@ -434,31 +443,31 @@
                                         <div class="form-group">
                                             <label for="street">Street</label>
                                             <input type="text" class="form-control" name="street" id="street"
-                                                   placeholder="Enter Street">
+                                                   value="<%=admin.getStreet() %>">
                                         </div>
                                     </div>
                                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                         <div class="form-group">
                                             <label for="city">City</label>
                                             <input type="text" class="form-control" name="city" id="city"
-                                                   placeholder="Enter City">
+                                                   value="<%=admin.getCity() %>">
                                         </div>
                                     </div>
                                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                         <div class="form-group">
                                             <label for="state">State/Province</label>
                                             <input type="text" class="form-control" name="state" id="state"
-                                                   placeholder="Enter State">
+                                                   value="<%=admin.getState() %>">
                                         </div>
                                     </div>
                                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                         <div class="form-group">
                                             <label for="zip">Zip Code</label>
                                             <input type="text" class="form-control" name="zip" id="zip"
-                                                   placeholder="Zip Code">
+                                                   value="<%=admin.getZip() %>">
                                         </div>
                                     </div>
-                                    <input type="hidden" id="adminId" name="adminId">
+                                    <input type="hidden" id="adminId" name="adminId" value="<%=admin.getAdminId() %>">
                                 </div>
                                 <div class="row gutters">
                                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
