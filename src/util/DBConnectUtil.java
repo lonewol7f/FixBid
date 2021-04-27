@@ -16,8 +16,8 @@ public class DBConnectUtil {
      */
 
     private static final String url = "jdbc:mysql://localhost:3306/fixbid";
-    private static final String username = "fixbid";
-    private static final String password = "FixBid@2021";
+    private static final String username = "USERNAME_HERE";
+    private static final String password = "YOUR_PASSWORD_HERE";
     private static Connection conn;
 
     /**
