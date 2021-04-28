@@ -6,6 +6,7 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
 
 
 public class UserDBUtil {
@@ -91,6 +92,39 @@ public class UserDBUtil {
         }
 
         return user;
+    }
+
+    /**
+     * This performs GET all users
+     *
+     * @return users (ArrayList<User>)
+     * @see DBConnectUtil#getConnection()
+     */
+    public static ArrayList<User> listUser() {
+        ArrayList<User> users = new ArrayList<>();
+        try {
+            conn = DBConnectUtil.getConnection();
+            stmt = conn.createStatement();
+
+            String sql = "SELECT * FROM user";
+            rs = stmt.executeQuery(sql);
+
+            while (rs.next()){
+                User user = new User();
+
+                user.setFName(rs.getString("FName"));
+                user.setLName(rs.getString("LName"));
+                user.setAddress(rs.getString("address"));
+                user.setPhoneNumber(rs.getString("phoneNumber"));
+                user.setEmail(rs.getString("email"));
+
+                users.add(user);
+            }
+        } catch (ClassNotFoundException | SQLException e){
+            e.printStackTrace();
+        }
+
+        return users;
     }
 }
 
