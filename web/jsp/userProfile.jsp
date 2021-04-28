@@ -24,7 +24,7 @@
 
     <%
         String email1 = (String) session.getAttribute("email1");
-        User user = UserDBUtil.getSingleUser("email1");
+        User user = UserDBUtil.getSingleUser(email1);
     %>
 </head>
 <body>
