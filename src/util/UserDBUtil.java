@@ -1,7 +1,10 @@
 package util;
 
+import model.User;
+
 import java.sql.Connection;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Statement;
 
 
@@ -63,6 +66,31 @@ public class UserDBUtil {
         }
 
         return status;
+    }
+
+    public static User getSingleUser(String email1) {
+        User user = new User();
+
+        try {
+            conn = DBConnectUtil.getConnection();
+            stmt = conn.createStatement();
+
+            String sql = "SELECT * FROM user WHERE email='" + email1 + "'";
+
+            rs = stmt.executeQuery(sql);
+            while (rs.next()) {
+                user.setFName(rs.getString("FName"));
+                user.setLName(rs.getString("LName"));
+                user.setAddress(rs.getString("address"));
+                user.setPhoneNumber(rs.getString("phoneNumber"));
+                user.setEmail(rs.getString("email"));
+                user.setPassword(rs.getString(rs.getString("password")));
+            }
+        } catch (ClassNotFoundException | SQLException e) {
+            e.printStackTrace();
+        }
+
+        return user;
     }
 }
 

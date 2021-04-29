@@ -1,3 +1,5 @@
+<%@ page import="model.User" %>
+<%@ page import="util.UserDBUtil" %>
 <%--
   Created by IntelliJ IDEA.
   User: RuwanaraT
@@ -19,11 +21,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/userProfile.css">
     <title>User Profile</title>
+
+    <%
+        String email1 = (String) session.getAttribute("email1");
+        User user = UserDBUtil.getSingleUser("email1");
+    %>
 </head>
 <body>
 <%@ include file="/includes/header.jsp" %>
 <div class = "container mt-5" style="background-color:  whitesmoke; width : 50%">
-    <form action="" method="post">
+    <form action="logout" method="get">
         <center> <h1 style="color: #001B48; font-weight: bold;"> My FixBid  </h1> </center>
 
         <!----- <div class="form-check">
@@ -47,7 +54,7 @@
                 <label for="one" class = "lbl">First Name</label>
             </div>
             <div class="col">
-                <input type="text" class="form-control" id = "one" name = "one" class = "txtbx">
+                <input type="text" class="form-control" id = "one" name = "one" class = "txtbx" value = "<%=user.getFName()%>">
             </div>
         </div> <br>
 
@@ -56,7 +63,7 @@
                 <label for="two" class = "lbl">Last Name</label>
             </div>
             <div class="col">
-                <input type="text" class="form-control" id = "two" name = "two" class = "txtbx">
+                <input type="text" class="form-control" id = "two" name = "two" class = "txtbx" value="<%=user.getLName()%>">
             </div>
         </div> <br>
 
@@ -66,7 +73,7 @@
                 <label for="three" class = "lbl">Address</label>
             </div>
             <div class="col">
-                <input type="text" class="form-control" id = "three" name = "three" class = "txtbx">
+                <input type="text" class="form-control" id = "three" name = "three" class = "txtbx" value="<%=user.getAddress()%>">
             </div>
         </div> <br>
 
@@ -75,7 +82,7 @@
                 <label for="four" class = "lbl">Phone Number</label>
             </div>
             <div class="col">
-                <input type="text" class="form-control" id = "four" name = "four" class = "txtbx">
+                <input type="text" class="form-control" id = "four" name = "four" class = "txtbx" value="<%=user.getPhoneNumber()%>">
             </div>
         </div> <br>
 
@@ -84,7 +91,7 @@
                 <label for="five" class = "lbl">E-mail</label>
             </div>
             <div class="col">
-                <input type="text" class="form-control" id = "five" name = "five" class = "txtbx">
+                <input type="text" class="form-control" id = "five" name = "five" class = "txtbx" value="<%=user.getEmail()%>">
             </div>
         </div> <br>
 
@@ -93,7 +100,7 @@
                 <label for="six" class = "lbl">Password</label>
             </div>
             <div class="col">
-                <input type="text" class="form-control" id = "six" name = "six">
+                <input type="text" class="form-control" id = "six" name = "six" value="<%=user.getPassword()%>">
             </div>
         </div> <br>
 
