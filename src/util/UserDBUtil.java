@@ -18,13 +18,13 @@ public class UserDBUtil {
     // Following code segment performs data insertion to the user table
 
     /**
-     * @param FName
-     * @param LName
-     * @param address
-     * @param phoneNumber
-     * @param email
-     * @param password
-     * @return
+     * @param FName is first name of the user
+     * @param LName is last name of the user
+     * @param address is address of the user
+     * @param phoneNumber is phone number of the user
+     * @param email is email address of the user
+     * @param password is password of the user
+     * @return status
      */
     public static boolean addUser(String FName, String LName, String address, String phoneNumber, String email, String password, String AccTpy) {
         boolean status = false;
@@ -85,7 +85,6 @@ public class UserDBUtil {
                 user.setAddress(rs.getString("address"));
                 user.setPhoneNumber(rs.getString("phoneNumber"));
                 user.setEmail(rs.getString("email"));
-                user.setPassword(rs.getString(rs.getString("password")));
             }
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();

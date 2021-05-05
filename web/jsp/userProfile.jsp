@@ -20,7 +20,7 @@
           integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/userProfile.css">
-    <title>User Profile</title>
+    <title>My FixBid</title>
 
     <%
         String email1 = (String) session.getAttribute("email1");
@@ -30,7 +30,7 @@
 <body>
 <%@ include file="/includes/header.jsp" %>
 <div class = "container mt-5" style="background-color:  whitesmoke; width : 50%">
-    <form action="logout" method="get">
+    <form action="" method="post">
         <center> <h1 style="color: #001B48; font-weight: bold;"> My FixBid  </h1> </center>
 
         <!----- <div class="form-check">
@@ -95,18 +95,10 @@
             </div>
         </div> <br>
 
-        <div class="row">
-            <div class="col">
-                <label for="six" class = "lbl">Password</label>
-            </div>
-            <div class="col">
-                <input type="text" class="form-control" id = "six" name = "six" value="<%=user.getPassword()%>">
-            </div>
-        </div> <br>
+        <button class="btn btn-primary" style="background-color:brown; font-weight: bold; position: relative; left:40%"> <a href="/jsp/logout"> </a> LOG OUT</button>
 
-        <button type="submit" class="btn btn-primary" style="background-color:brown; font-weight: bold; position: relative; left:40%">LOG OUT</button> <br>
+        <button type="submit" class="btn btn-primary" style="background-color:#018abe; font-weight: bold; position: relative; left:40%">EDIT</button> <br>
 
-        <img src = ../images/User/edit.png style="height: 3%; width:3%">  <a href = "" style="color:black;"> Edit Account</a> <br>
         <img src = ../images/User/trash.png style="height: 3%; width:3%">  <a href = "" style="color:black;"> Delete Account</a> <br>
 
     </form>
