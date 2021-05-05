@@ -2,6 +2,7 @@ package servlets;
 
 import util.FeedbackDBUtil;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -18,8 +19,12 @@ public class addFeedbackServlet extends HttpServlet {
 
         if (FeedbackDBUtil.addFeedback(email,type,comment)){
             System.out.println("Success"); // for testing
+            RequestDispatcher dispatcher = request.getRequestDispatcher("/index.jsp");
+            dispatcher.forward(request,response);
         }else {
-            System.out.println("Sad bocca"); // for testing
+            System.out.println("Failed"); // for testing
+            RequestDispatcher dispatcher = request.getRequestDispatcher("/index.jsp");
+            dispatcher.forward(request,response);
         }
 
     }
