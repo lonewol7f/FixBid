@@ -40,6 +40,8 @@ public class loginServlet extends HttpServlet {
                     dispatcher.forward(request,response);
                     System.out.println("Login Success");
                 } else {
+                    RequestDispatcher dispatcher = request.getRequestDispatcher("/jsp/login.jsp");
+                    dispatcher.forward(request,response);
                     System.out.println("Login Unsuccessful");
                 }
 
