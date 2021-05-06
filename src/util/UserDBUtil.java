@@ -2,10 +2,7 @@ package util;
 
 import model.User;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.ArrayList;
 
 
@@ -124,6 +121,35 @@ public class UserDBUtil {
         }
 
         return users;
+    }
+
+    public static boolean updateUser(String FName, String LName, String address, String phoneNumber, String email, int UID) {
+
+        boolean status = false;
+
+        try{
+
+            conn = DBConnectUtil.getConnection();
+            PreparedStatement st = conn.prepareStatement("UPDATE user SET FName=?, LName=?, address=?, phoneNumber=?, email=? WHERE UID=?");
+
+            st.setString(1, FName);
+            st.setString(2, LName);
+            st.setString(3, address);
+            st.setString(4, phoneNumber);
+            st.setString(5, email);
+            st.setInt(6, UID);
+
+            int reply = st.executeUpdate();
+
+            if(reply > 0)
+            {
+                status = true;
+            }
+
+        }catch(ClassNotFoundException | SQLException e){
+            e.printStackTrace();
+        }
+        return status;
     }
 }
 

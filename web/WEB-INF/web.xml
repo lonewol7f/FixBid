@@ -58,5 +58,14 @@
         <url-pattern>/jsp/logout</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>updateUser</servlet-name>
+        <servlet-class>servlets.updateUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>updateUser</servlet-name>
+        <url-pattern>/jsp/updateUser</url-pattern>
+    </servlet-mapping>
+
 
 </web-app>
