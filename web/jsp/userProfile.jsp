@@ -30,7 +30,7 @@
 <body>
 <%@ include file="/includes/header.jsp" %>
 <div class = "container mt-5" style="background-color:  whitesmoke; width : 50%">
-    <form action="" method="post">
+    <form action="updateUser" method="post">
         <center> <h1 style="color: #001B48; font-weight: bold;"> My FixBid  </h1> </center>
 
         <!----- <div class="form-check">
@@ -95,11 +95,11 @@
             </div>
         </div> <br>
 
-        <button class="btn btn-primary" style="background-color:brown; font-weight: bold; position: relative; left:40%"> <a href="/jsp/logout"> </a> LOG OUT</button>
+        <button class="btn btn-primary" style="background-color:brown; font-weight: bold; position: relative; left:40%"> <a href="/jsp/logout" style="color: white; text-direction:none;"> LOG OUT </a> </button>
 
-        <button type="submit" class="btn btn-primary" style="background-color:#018abe; font-weight: bold; position: relative; left:40%">EDIT</button> <br>
+        <button type="submit" class="btn btn-primary" style="background-color:#018abe; font-weight: bold; position: relative; left:78%;">EDIT</button> <br>
 
-        <img src = ../images/User/trash.png style="height: 3%; width:3%">  <a href = "" style="color:black;"> Delete Account</a> <br>
+        <button class="btn btn-primary" style="background-color:mediumseagreen; font-weight: bold; color: white;"> <a href="#" style="color: white; text-direction:none;"> DELETE ACCOUNT </a> </button> <br>
 
     </form>
 </div>
