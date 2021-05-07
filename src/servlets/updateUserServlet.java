@@ -1,4 +1,5 @@
 package servlets;
+
 import util.UserDBUtil;
 
 import javax.servlet.ServletException;
@@ -12,23 +13,17 @@ import java.io.IOException;
 public class updateUserServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        String UID = request.getParameter("UID");
-        String FName = request.getParameter("FName");
-        String LName = request.getParameter("LName");
-        String address = request.getParameter("address");
-        String phoneNumber = request.getParameter("phoneNumber");
-        String email = request.getParameter("email");
+        String FName = request.getParameter("one");
+        String LName = request.getParameter("two");
+        String address = request.getParameter("three");
+        String phoneNumber = request.getParameter("four");
+        String email = request.getParameter("five");
 
-        int newUID = Integer.parseInt(UID);
+        boolean result = UserDBUtil.updateUser(FName, LName, address, phoneNumber, email);
 
-        boolean result = UserDBUtil.updateUser(FName, LName, address, phoneNumber, email, newUID);
-
-        if(result)
-        {
+        if (result) {
             System.out.println("User is updated successfully ! ");
-        }
-        else
-        {
+        } else {
             System.out.println("Update is not successful !");
         }
     }

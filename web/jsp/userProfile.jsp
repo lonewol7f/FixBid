@@ -91,10 +91,9 @@
                 <label for="five" class = "lbl">E-mail</label>
             </div>
             <div class="col">
-                <input type="text" class="form-control" id = "five" name = "five" class = "txtbx" value="<%=user.getEmail()%>">
+                <input type="email" class="form-control" id = "five" name = "five" class = "txtbx" value="<%=user.getEmail()%>">
             </div>
         </div> <br>
-
         <button class="btn btn-primary" style="background-color:brown; font-weight: bold; position: relative; left:40%"> <a href="/jsp/logout" style="color: white; text-direction:none;"> LOG OUT </a> </button>
 
         <button type="submit" class="btn btn-primary" style="background-color:#018abe; font-weight: bold; position: relative; left:78%;">EDIT</button> <br>
