@@ -22,10 +22,123 @@
 <body>
 <%@ include file="/includes/header.jsp" %>
 
+<br><hr><h4>&nbsp; Pens</h4><br>
+<div class="card-deck" style="margin-right: 10px;margin-left: 10px">
+    <div class="card">
+        <img class="card-img-top" src="../images/Products/pen1.jpg" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+        <a href="#" class="btn btn-primary" style="width: 80%;margin-bottom: 15px;margin-left: auto; margin-right: auto;">Bid</a>
+        <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+    </div>
+    <div class="card">
+        <img class="card-img-top" src="../images/Products/pen2.jpg" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        </div>
+        <a href="#" class="btn btn-primary" style="width: 80%;margin-bottom: 15px;margin-left: auto; margin-right: auto;">Bid</a>
+        <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+    </div>
+    <div class="card">
+        <img class="card-img-top" src="../images/Products/pen6.jpg" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        </div>
+        <a href="#" class="btn btn-primary" style="width: 80%;margin-bottom: 15px;margin-left: auto; margin-right: auto;">Bid</a>
+        <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+    </div>
+    <div class="card">
+        <img class="card-img-top" src="../images/Products/pen4.jpg" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+        <a href="#" class="btn btn-primary" style="width: 80%;margin-bottom: 15px;margin-left: auto; margin-right: auto;">Bid</a>
+        <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+    </div>
+    <div class="card">
+        <img class="card-img-top" src="../images/Products/pen1.jpg" height="300" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+        <a href="#" class="btn btn-primary" style="width: 80%;margin-bottom: 15px;margin-left: auto; margin-right: auto;">Bid</a>
+        <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+    </div>
+</div>
 
-
-
-
+<br><hr><h4>&nbsp; Shoes</h4><br>
+<div class="card-deck" style="margin-right: 10px;margin-left: 10px">
+    <div class="card">
+        <img class="card-img-top" src="../images/Products/pen1.jpg" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+        <a href="#" class="btn btn-primary" style="width: 80%;margin-bottom: 15px;margin-left: auto; margin-right: auto;">Bid</a>
+        <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+    </div>
+    <div class="card">
+        <img class="card-img-top" src="../images/Products/pen2.jpg" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        </div>
+        <a href="#" class="btn btn-primary" style="width: 80%;margin-bottom: 15px;margin-left: auto; margin-right: auto;">Bid</a>
+        <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+    </div>
+    <div class="card">
+        <img class="card-img-top" src="../images/Products/pen6.jpg" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        </div>
+        <a href="#" class="btn btn-primary" style="width: 80%;margin-bottom: 15px;margin-left: auto; margin-right: auto;">Bid</a>
+        <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+    </div>
+    <div class="card">
+        <img class="card-img-top" src="../images/Products/pen4.jpg" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+        <a href="#" class="btn btn-primary" style="width: 80%;margin-bottom: 15px;margin-left: auto; margin-right: auto;">Bid</a>
+        <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+    </div>
+    <div class="card">
+        <img class="card-img-top" src="../images/Products/pen1.jpg" height="300" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+        <a href="#" class="btn btn-primary" style="width: 80%;margin-bottom: 15px;margin-left: auto; margin-right: auto;">Bid</a>
+        <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+    </div>
+</div>
 
 <%@ include file="/includes/footer.jsp" %>
 </body>
