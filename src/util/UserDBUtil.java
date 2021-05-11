@@ -45,6 +45,13 @@ public class UserDBUtil {
         return status;
     }
 
+    /**
+     *
+     * @param email1
+     * @param password1
+     * @return
+     */
+
     public static boolean userLogin(String email1, String password1) {
         boolean status = false;
         try {
@@ -65,6 +72,12 @@ public class UserDBUtil {
 
         return status;
     }
+
+    /**
+     *
+     * @param email1
+     * @return
+     */
 
     public static User getSingleUser(String email1) {
         User user = new User();
@@ -123,6 +136,15 @@ public class UserDBUtil {
         return users;
     }
 
+    /**
+     *
+     * @param FName
+     * @param LName
+     * @param address
+     * @param phoneNumber
+     * @param email
+     * @return
+     */
     public static boolean updateUser(String FName, String LName, String address, String phoneNumber, String email) {
 
         boolean status = false;
@@ -149,6 +171,27 @@ public class UserDBUtil {
             e.printStackTrace();
         }
         return status;
+    }
+
+    /**
+     *
+     * @param UID
+     */
+
+    public static void deleteUser(int UID) {
+
+        try {
+
+            conn = DBConnectUtil.getConnection();
+            stmt = conn.createStatement();
+
+            String sql = "DELETE FROM user WHERE UID = '"+UID+"'";
+            stmt.executeUpdate(sql);
+
+        }catch(Exception e) {
+
+            e.printStackTrace();
+        }
     }
 }
 
