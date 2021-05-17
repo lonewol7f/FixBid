@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
           integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../js/product.js"></script>
     <title>Products</title>
 </head>
 <body>
@@ -28,7 +29,9 @@
         <img class="card-img-top" src="../images/Products/pen1.jpg" alt="Card image cap">
         <div class="card-body">
             <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text">fdgffdfgd</p>
+
+            <h6 id="countdown"></h6><!-- Display the countdown timer in an element -->
         </div>
         <a href="#" class="btn btn-primary" style="width: 80%;margin-bottom: 15px;margin-left: auto; margin-right: auto;">Bid</a>
         <div class="card-footer">
@@ -39,7 +42,7 @@
         <img class="card-img-top" src="../images/Products/pen2.jpg" alt="Card image cap">
         <div class="card-body">
             <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text">xxxx</p>
         </div>
         <a href="#" class="btn btn-primary" style="width: 80%;margin-bottom: 15px;margin-left: auto; margin-right: auto;">Bid</a>
         <div class="card-footer">
@@ -50,7 +53,7 @@
         <img class="card-img-top" src="../images/Products/pen6.jpg" alt="Card image cap">
         <div class="card-body">
             <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            <p class="card-text">xxxxxxxxx</p>
         </div>
         <a href="#" class="btn btn-primary" style="width: 80%;margin-bottom: 15px;margin-left: auto; margin-right: auto;">Bid</a>
         <div class="card-footer">
@@ -61,7 +64,7 @@
         <img class="card-img-top" src="../images/Products/pen4.jpg" alt="Card image cap">
         <div class="card-body">
             <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text">xxxxxxxx</p>
         </div>
         <a href="#" class="btn btn-primary" style="width: 80%;margin-bottom: 15px;margin-left: auto; margin-right: auto;">Bid</a>
         <div class="card-footer">
@@ -72,7 +75,7 @@
         <img class="card-img-top" src="../images/Products/pen1.jpg" height="300" alt="Card image cap">
         <div class="card-body">
             <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text">xxxxxxxxx</p>
         </div>
         <a href="#" class="btn btn-primary" style="width: 80%;margin-bottom: 15px;margin-left: auto; margin-right: auto;">Bid</a>
         <div class="card-footer">
