@@ -67,5 +67,14 @@
         <url-pattern>/jsp/updateUser</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>deleteUser</servlet-name>
+        <servlet-class>servlets.deleteUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>deleteUser</servlet-name>
+        <url-pattern>/jsp/deleteUser</url-pattern>
+    </servlet-mapping>
+
 
 </web-app>

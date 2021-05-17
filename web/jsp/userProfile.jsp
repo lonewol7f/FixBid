@@ -94,11 +94,13 @@
                 <input type="email" class="form-control" id = "five" name = "five" class = "txtbx" value="<%=user.getEmail()%>">
             </div>
         </div> <br>
-        <button class="btn btn-primary" style="background-color:brown; font-weight: bold; position: relative; left:40%"> <a href="/jsp/logout" style="color: white; text-direction:none;"> LOG OUT </a> </button>
 
-        <button type="submit" class="btn btn-primary" style="background-color:#018abe; font-weight: bold; position: relative; left:78%;">EDIT</button> <br>
+        <button class="btn btn-primary" style="background-color:brown; font-weight: bold; color: white;"> <a href="jsp/deleteUser" style="color: white; text-decoration:none;"> DELETE ACCOUNT </a> </button>
 
-        <button class="btn btn-primary" style="background-color:mediumseagreen; font-weight: bold; color: white;"> <a href="#" style="color: white; text-direction:none;"> DELETE ACCOUNT </a> </button> <br>
+        <button class="btn btn-primary" style="background-color:mediumseagreen; font-weight: bold; position: relative; left:20%"> <a href="/jsp/logout" style="color: white; text-decoration:none;"> LOG OUT </a> </button>
+
+        <button type="submit" class="btn btn-primary" style="background-color:#018abe; font-weight: bold; position: relative; left:55%;">EDIT</button> <br> <br>
+
 
     </form>
 </div>
