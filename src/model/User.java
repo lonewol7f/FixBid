@@ -2,7 +2,7 @@ package model;
 
 public class User {
 
-    //private String UserAcc;
+    private int UID;
     private String FName;
     private String LName;
     private String address;
@@ -11,13 +11,13 @@ public class User {
     private String password;
 
 
-    /*public String getUserAcc() {
-        return UserAcc;
+    public int getUID() {
+        return UID;
     }
 
-    public void setUserAcc(String userAcc) {
-        UserAcc = userAcc;
-    }*/
+    public void setUID(int UID) {
+        this.UID = UID;
+    }
 
     public String getFName() {
         return FName;
