@@ -2,6 +2,7 @@ package servlets;
 
 import util.UserDBUtil;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -26,5 +27,8 @@ public class updateUserServlet extends HttpServlet {
         } else {
             System.out.println("Update is not successful !");
         }
+
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/jsp/userProfile.jsp");
+        dispatcher.forward(request,response);
     }
 }
