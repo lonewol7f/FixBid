@@ -22,13 +22,16 @@ public class updateUserServlet extends HttpServlet {
 
         boolean result = UserDBUtil.updateUser(FName, LName, address, phoneNumber, email);
 
-        if (result) {
-            System.out.println("User is updated successfully ! ");
+        if (result == true) {
+
+            System.out.println("User is updated successfully");
+
+            RequestDispatcher dispatcher = request.getRequestDispatcher("/jsp/userProfile.jsp");
+            dispatcher.forward(request,response);
         } else {
-            System.out.println("Update is not successful !");
+            System.out.println("Update is not successful");
         }
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/jsp/userProfile.jsp");
-        dispatcher.forward(request,response);
+
     }
 }
