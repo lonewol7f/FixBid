@@ -3,11 +3,12 @@
 <%--
   Created by IntelliJ IDEA.
   User: RuwanaraT
-  Date: 4/22/2021
-  Time: 11:28 PM
+  Date: 5/20/2021
+  Time: 1:00 PM
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <html>
 <head>
     <meta charset="UTF-8">
@@ -20,7 +21,7 @@
           integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/userProfile.css">
-    <title>My FixBid</title>
+    <title>Delete Account</title>
 
     <%
         String email1 = (String) session.getAttribute("email1");
@@ -30,20 +31,8 @@
 <body>
 <%@ include file="/includes/header.jsp" %>
 <div class = "container mt-5" style="background-color:  whitesmoke; width : 50%">
-    <form action="updateUser" method="post">
+    <form action="deleteUser" method="post">
         <center> <h1 style="color: #001B48; font-weight: bold;"> My FixBid  </h1> </center>
-
-        <!----- <div class="form-check">
-               <input class="form-check-input" type="radio" name="tik" id="tik1" value="user" checked>
-               <label class="form-check-label" for="tik1">
-                 User Account
-               </label>
-             </div>
-             <div class="form-check">
-               <input class="form-check-input" type="radio" name="tik" id="tik2" value="vendor">
-               <label class="form-check-label" for="tik2">
-                 Vendor Account
-               </label> --->
 
         <img src = ../images/User/pp.png class = "ProPic">
 
@@ -95,13 +84,10 @@
             </div>
         </div> <br>
 
-        <button class="btn btn-primary" style="background-color:brown; font-weight: bold; color: white;"> <a href="deleteUser.jsp" style="color: white; text-decoration:none;"> DELETE ACCOUNT </a> </button>
+        <button type="submit" class="btn btn-primary" style="font-weight: bold; background-color: firebrick; position: relative; left: 35%">PERMANENTLY DELETE</button>
+        <button class="btn btn-primary" style="background-color:mediumseagreen; font-weight: bold; position: relative; left:38%"> <a href="userProfile.jsp" style="color: white; text-decoration:none;"> NO </a> </button>
 
-        <button class="btn btn-primary" style="background-color:mediumseagreen; font-weight: bold; position: relative; left:20%"> <a href="/jsp/logout" style="color: white; text-decoration:none;"> LOG OUT </a> </button>
-
-        <button type="submit" class="btn btn-primary" style="background-color:#018abe; font-weight: bold; position: relative; left:55%;">EDIT</button> <br> <br>
-
-
+        <br> <br>
     </form>
 </div>
 <%@ include file="/includes/footer.jsp" %>

@@ -175,23 +175,32 @@ public class UserDBUtil {
 
     /**
      *
-     * @param UID
+     * @param mail
      */
 
-    public static void deleteUser(int UID) {
+    public static boolean deleteUser(String mail) {
+
+        boolean status = false;
 
         try {
 
             conn = DBConnectUtil.getConnection();
             stmt = conn.createStatement();
 
-            String sql = "DELETE FROM user WHERE UID = '"+UID+"'";
-            stmt.executeUpdate(sql);
+            String sql = "DELETE FROM user WHERE email = '"+mail+"'";
+            int res = stmt.executeUpdate(sql);
+
+            if(res > 0)
+            {
+                status = true;
+            }
 
         }catch(Exception e) {
 
             e.printStackTrace();
         }
+
+        return status;
     }
 }
 
