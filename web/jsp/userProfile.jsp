@@ -95,7 +95,7 @@
             </div>
         </div> <br>
 
-        <button class="btn btn-primary" style="background-color:brown; font-weight: bold; color: white;" name = "UID" value = <%=user.getUID()%>> <a href="jsp/deleteUser" style="color: white; text-decoration:none;"> DELETE ACCOUNT </a> </button>
+        <button class="btn btn-primary" style="background-color:brown; font-weight: bold; color: white;"> <a href="deleteUser.jsp" style="color: white; text-decoration:none;"> DELETE ACCOUNT </a> </button>
 
         <button class="btn btn-primary" style="background-color:mediumseagreen; font-weight: bold; position: relative; left:20%"> <a href="/jsp/logout" style="color: white; text-decoration:none;"> LOG OUT </a> </button>
 
