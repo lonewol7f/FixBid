@@ -58,7 +58,7 @@
 
         <br><br>
         <div class="div1">
-            <a href="" style="color:darkred; font-weight: bold;"> Forgot Password </a>
+            <a href="" style="color:darkred; font-weight: bold; text-decoration: none"> Forgot Password </a>
         </div>
 
     </form>
