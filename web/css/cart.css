@@ -1,3 +1,12 @@
+h1 {
+    font-weight: bold;
+    color: #001B48;
+    float: left;
+}
+hr{
+    border: 2px solid #02457A;
+}
+
 .table>tbody>tr>td, .table>tfoot>tr>td{
     vertical-align: middle;
 }
