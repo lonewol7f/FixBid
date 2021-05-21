@@ -24,9 +24,10 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
 </head>
-    <body>
+    <br>
     <%@ include file="/includes/header.jsp" %>
-    <h1>Shopping Cart</h1>
+    <center><h1> Shopping Cart </h1></center>
+    <br></br>
 <div class="container">
     <table id="cart" class="table table-hover table-condensed">
 
