@@ -8,8 +8,18 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    <style>
+        body {
+            background-image: url("../images/Products/cart.png");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+    </style>
 
     <meta charset="UTF-8">
+
+
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -45,6 +55,7 @@
                 </td>
                 <td data-th="Subtotal" class="text-center">Rs:2000</td>
                 <td class="actions" data-th="">
+                    <button class="btn btn-info btn-sm"><i class="fa fa-refresh"></i></button>
                     <button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>
                 </td>
             </tr>
@@ -63,6 +74,7 @@
                 </td>
                 <td data-th="Subtotal" class="text-center">Rs:100</td>
                 <td class="actions" data-th="">
+                    <button class="btn btn-info btn-sm"><i class="fa fa-refresh"></i></button>
                     <button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>
                 </td>
             </tr>
@@ -82,6 +94,26 @@
                 </td>
                 <td data-th="Subtotal" class="text-center">Rs:4000</td>
                 <td class="actions" data-th="">
+                    <button class="btn btn-info btn-sm"><i class="fa fa-refresh"></i></button>
+                    <button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>
+                </td>
+            </tr>
+            <tr>
+                <td data-th="Product">
+                    <div class="row">
+                        <div class="col-sm-2 hidden-xs"><img src="../images/Products/yeezy.jpg" alt="..." class="img-responsive"/></div>
+                        <div class="col-sm-10">
+                            <h4 class="nomargin">Product 4</h4>
+                        </div>
+                    </div>
+                </td>
+                <td data-th="Price">Rs:4000</td>
+                <td data-th="Quantity">
+                    <input type="number" class="form-control text-center" value="1">
+                </td>
+                <td data-th="Subtotal" class="text-center">Rs:4000</td>
+                <td class="actions" data-th="">
+                    <button class="btn btn-info btn-sm"><i class="fa fa-refresh"></i></button>
                     <button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>
                 </td>
             </tr>
@@ -89,12 +121,12 @@
             </tbody>
             <tfoot>
             <tr class="visible-xs">
-                <td class="text-center"><strong>Total 6100</strong></td>
+                <td class="text-center"><strong>Total 10100</strong></td>
             </tr>
             <tr>
                 <td><a href="#" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
                 <td colspan="2" class="hidden-xs"></td>
-                <td class="hidden-xs text-center"><strong>Total Rs:6100</strong></td>
+                <td class="hidden-xs text-center"><strong>Total Rs:10100</strong></td>
                 <td><a href="#" class="btn btn-success btn-block">Checkout <i class="fa fa-angle-right"></i></a></td>
             </tr>
             </tfoot>
