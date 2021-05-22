@@ -2,6 +2,7 @@ package servlets;
 
 import util.UserDBUtil;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -21,10 +22,16 @@ public class updateUserServlet extends HttpServlet {
 
         boolean result = UserDBUtil.updateUser(FName, LName, address, phoneNumber, email);
 
-        if (result) {
-            System.out.println("User is updated successfully ! ");
+        if (result == true) {
+
+            System.out.println("User is updated successfully");
+
+            RequestDispatcher dispatcher = request.getRequestDispatcher("/jsp/userProfile.jsp");
+            dispatcher.forward(request,response);
         } else {
-            System.out.println("Update is not successful !");
+            System.out.println("Update is not successful");
         }
+
+
     }
 }

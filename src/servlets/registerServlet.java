@@ -24,9 +24,9 @@ public class registerServlet extends HttpServlet {
 
 
         if (UserDBUtil.addUser(FName, LName, address, phoneNumber, email, password,AccTpy)) {
-            System.out.println("Data inserted");
+            System.out.println("New user data is inserted");
         } else {
-            System.out.println("Error");
+            System.out.println("Data is not inserted");
         }
 
 
