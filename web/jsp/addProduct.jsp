@@ -31,7 +31,7 @@
     <fieldset>
 
         <!-- Form Name -->
-        <legend>PRODUCTS</legend>
+        <legend>ADD A PRODUCT</legend>
 
 
         <!-- Text input-->
@@ -39,25 +39,23 @@
             <label class="col-md-4 control-label" for="product_name">PRODUCT NAME</label>
             <div class="col-md-4">
                 <input id="product_name" name="product_name" placeholder="PRODUCT NAME" class="form-control input-md" required="" type="text">
-
-            </div>
-        </div>
-
-
-        <!-- Select Basic -->
-        <div class="form-group">
-            <label class="col-md-4 control-label" for="product_categorie">PRODUCT CATEGORY</label>
-            <div class="col-md-4">
-                <select id="product_categorie" name="product_categorie" class="form-control">
-                </select>
             </div>
         </div>
 
         <!-- Text input-->
         <div class="form-group">
-            <label class="col-md-4 control-label" for="start_price">START PRICE</label>
+            <label class="col-md-4 control-label" for="expiry_date">Bid Expiry Date</label>
             <div class="col-md-4">
-                <input id="start_price" name="start_price" placeholder="START PRICE" class="form-control input-md" required="" type="text">
+                <input id="expiry_date" name="expiry_date" placeholder="DD/MM/YYYY" class="form-control input-md" required="" type="text">
+
+            </div>
+        </div>
+
+        <!-- Text input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="start_price">START PRICE(USD $)</label>
+            <div class="col-md-4">
+                <input id="start_price" name="start_price" placeholder="Enter a USD value(Ex:10)" class="form-control input-md" required="" type="text">
 
             </div>
         </div>
@@ -70,47 +68,28 @@
             </div>
         </div>
 
+        <!-- Select Basic -->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="product_category">PRODUCT CATEGORY</label>
+            <div class="col-md-4">
+                <select id="product_category" name="product_category" class="form-control">
+                    <option selected value="Watch">Watch</option>
+                    <option value="Shoes">Shoes</option>
+                    <option value="Pens">Pens</option>
+                </select>
+            </div>
+        </div>
+
+
         <!-- Text input-->
         <div class="form-group">
-            <label class="col-md-4 control-label" for="online_date">ONLINE DATE</label>
+            <label class="col-md-4 control-label" for="vendor_id">VENDOR ID</label>
             <div class="col-md-4">
-                <input id="online_date" name="online_date" placeholder="DD/MM/YYYY" class="form-control input-md" required="" type="text">
+                <input id="vendor_id" name="vendor_id" placeholder="VENDOR ID" class="form-control input-md" required="" type="text">
 
             </div>
         </div>
 
-        <!-- Text input-->
-        <div class="form-group">
-            <label class="col-md-4 control-label" for="author">AUTHOR</label>
-            <div class="col-md-4">
-                <input id="author" name="author" placeholder="AUTHOR" class="form-control input-md" required="" type="text">
-
-            </div>
-        </div>
-
-        <!-- Text input-->
-        <div class="form-group">
-            <label class="col-md-4 control-label" for="enable_display">ENABLE DISPLAY</label>
-            <div class="col-md-4">
-                <input id="enable_display" name="enable_display" placeholder="ENABLE DISPLAY" class="form-control input-md" required="" type="text">
-
-            </div>
-        </div>
-
-        <!-- Text input-->
-        <div class="form-group">
-            <label class="col-md-4 control-label" for="comment">COMMENT</label>
-            <div class="col-md-4">
-                <input id="comment" name="comment" placeholder="COMMENT" class="form-control input-md" required="" type="text">
-
-            </div>
-        </div>
-
-        <!-- Text input-->
-        <div class="form-group">
-            <label class="col-md-4 control-label" for="approuved_by">APPROUVED BY</label>
-            <div class="col-md-4">
-                <input id="approuved_by" name="approuved_by" placeholder="APPROUVED BY" class="form-control input-md" required="" type="text">
 
                 <!-- File Button -->
                 <div class="form-group">
@@ -122,9 +101,9 @@
 
                 <!-- Button -->
                 <div class="form-group">
-                    <label class="col-md-4 control-label" for="singlebutton">Single Button</label>
+                    <label class="col-md-4 control-label" for="submitbutton">Submit Button</label>
                     <div class="col-md-4">
-                        <button id="singlebutton" name="singlebutton" class="btn btn-primary">Submit Product</button>
+                        <button id="submitbutton" name="submitbutton" class="btn btn-primary">Submit Product</button>
                     </div>
                 </div>
 
