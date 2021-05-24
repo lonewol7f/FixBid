@@ -143,7 +143,7 @@
     </div>
 </div>
 
-<br><hr><h4>&nbsp; Watches</h4><br>
+<br><hr><h4>&nbsp;Watches</h4><br>
 <div class="card-deck" style="margin-right: 10px;margin-left: 10px">
     <div class="card">
         <img class="card-img-top" src="../images/Products/watch1.jpg" alt="Card image cap">
