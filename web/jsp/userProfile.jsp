@@ -29,6 +29,7 @@
 </head>
 <body>
 <%@ include file="/includes/header.jsp" %>
+
 <div class = "container mt-5" style="background-color:  whitesmoke; width : 50%">
     <form action="updateUser" method="post">
         <center> <h1 style="color: #001B48; font-weight: bold;"> My FixBid  </h1> </center>
@@ -101,9 +102,9 @@
 
         <button type="submit" class="btn btn-primary" style="background-color:#018abe; font-weight: bold; position: relative; left:55%;">EDIT</button> <br> <br>
 
-
     </form>
 </div>
+
 <%@ include file="/includes/footer.jsp" %>
 </body>
 </html>
