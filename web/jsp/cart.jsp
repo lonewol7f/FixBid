@@ -25,6 +25,7 @@
 </head>
 <body>
 <%@ include file="/includes/header.jsp" %>
+
 <center><h1> SHOPPING CART </h1></center>
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 <div class="container">
@@ -42,7 +43,7 @@
                 <div class="row">
                     <div class="col-sm-2 hidden-xs"><img src="../images/Products/watch2.jpg" alt="..." class="img-responsive"/></div>
                     <div class="col-sm-10">
-                        <h4 class="nomargin">Product 1</h4>
+                        <h4 class="nomargin">watch 1</h4>
                     </div>
                 </div>
             </td>
@@ -58,7 +59,7 @@
                 <div class="row">
                     <div class="col-sm-2 hidden-xs"><img src="../images/Products/pen1.jpg" alt="..." class="img-responsive"/></div>
                     <div class="col-sm-10">
-                        <h4 class="nomargin">Product 2</h4>
+                        <h4 class="nomargin">Pen 1</h4>
                     </div>
                 </div>
             </td>
@@ -75,7 +76,7 @@
                 <div class="row">
                     <div class="col-sm-2 hidden-xs"><img src="../images/Products/timberland.jpg"  alt="..." class="img-responsive"/></div>
                     <div class="col-sm-10">
-                        <h4 class="nomargin">Product 3</h4>
+                        <h4 class="nomargin">shoe 1</h4>
                     </div>
                 </div>
             </td>
@@ -87,12 +88,13 @@
         </tr>
 
         <tfoot>
-        <tr class="visible-xs">
-            <td class="text-center"><strong>Total 6100</strong></td>
-        </tr>
         <tr>
-            <td><a href="#" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
-            <td><a href="#" class="btn btn-success btn-block">Checkout <i class="fa fa-angle-right"></i></a></td>
+        <td>
+            <a href="#" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
+            <td colspan="2" class="hidden-xs"></td>
+            <td><a href="checkout.jsp">checkout</a>
+                <onclick="document.forms[0].action = 'checkout.jsp'; return true;" />
+            </td>
         </tr>
         </tfoot>
     </table>
