@@ -51,10 +51,7 @@
                 <input type="number" class="form-control text-center" value="2">
             </td>
             <td data-th="Subtotal" class="text-center">Rs:2000</td>
-            <td class="actions" data-th="">
-                <button class="btn btn-info btn-sm"><i class="fa fa-refresh"></i></button>
-                <button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>
-            </td>
+
         </tr>
         <tr>
             <td data-th="Product">
@@ -70,10 +67,7 @@
                 <input type="number" class="form-control text-center" value="1">
             </td>
             <td data-th="Subtotal" class="text-center">Rs:100</td>
-            <td class="actions" data-th="">
-                <button class="btn btn-info btn-sm"><i class="fa fa-refresh"></i></button>
-                <button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>
-            </td>
+
         </tr>
         </tr>
         <tr>
@@ -90,10 +84,6 @@
                 <input type="number" class="form-control text-center" value="2">
             </td>
             <td data-th="Subtotal" class="text-center">Rs:4000</td>
-            <td class="actions" data-th="">
-                <button class="btn btn-info btn-sm"><i class="fa fa-refresh"></i></button>
-                <button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>
-            </td>
         </tr>
 
         <tfoot>
@@ -102,8 +92,6 @@
         </tr>
         <tr>
             <td><a href="#" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
-            <td colspan="2" class="hidden-xs"></td>
-            <td class="hidden-xs text-center"><strong>Total Rs:6100</strong></td>
             <td><a href="#" class="btn btn-success btn-block">Checkout <i class="fa fa-angle-right"></i></a></td>
         </tr>
         </tfoot>
