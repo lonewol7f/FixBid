@@ -88,9 +88,6 @@
         </tr>
 
         <tfoot>
-        <tr class="visible-xs">
-            <td class="text-center"><strong>Total 6100</strong></td>
-        </tr>
         <tr>
         <td>
             <a href="#" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
