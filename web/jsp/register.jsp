@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/headerFooter.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/FixBid_Registration.css">
+    <script src="${pageContext.request.contextPath}/js/register.js"></script>
     <title> FixBid Registration </title>
 </head>
 <body>
@@ -41,7 +42,7 @@
 
 <div class="container mt-5" style="background-color: whitesmoke; width : 50%">
 
-    <form action="registerSer" method="post">
+    <form action="registerSer" method="post" onsubmit="return checkPassword()">
 
         <center><h1> FixBid Registration </h1></center>
         <hr>
@@ -110,7 +111,7 @@
         </div>
 
         <div class="form-check">
-            <input type="checkbox" class="form-check-input" name="terms" id="terms" required>
+            <input type="checkbox" class="form-check-input" name="terms" id="terms" required onclick = "enableButton()">
             <label class="form-check-label" for="terms"> Accept Privacy & Policy Terms </label>
         </div>
 

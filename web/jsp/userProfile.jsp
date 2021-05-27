@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
           integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/userProfile.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/userProfile.css"
     <title>My FixBid</title>
 
     <%
@@ -29,6 +29,7 @@
 </head>
 <body>
 <%@ include file="/includes/header.jsp" %>
+
 <div class = "container mt-5" style="background-color:  whitesmoke; width : 50%">
     <form action="updateUser" method="post">
         <center> <h1 style="color: #001B48; font-weight: bold;"> My FixBid  </h1> </center>
@@ -101,9 +102,9 @@
 
         <button type="submit" class="btn btn-primary" style="background-color:#018abe; font-weight: bold; position: relative; left:55%;">EDIT</button> <br> <br>
 
-
     </form>
 </div>
+
 <%@ include file="/includes/footer.jsp" %>
 </body>
 </html>
