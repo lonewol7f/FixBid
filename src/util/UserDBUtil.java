@@ -202,5 +202,38 @@ public class UserDBUtil {
 
         return status;
     }
+
+    /**
+     *
+     * @param UEmail user email
+     * @param newP new password
+     * @return
+     */
+
+    public static boolean resetPassword(String UEmail, String newP) {
+
+        boolean isSuccess = false;
+
+        try {
+
+            conn = DBConnectUtil.getConnection();
+            PreparedStatement pst = conn.prepareStatement("UPDATE user SET password=? WHERE email=?");
+
+            pst.setString(1, newP);
+            pst.setString(2, UEmail);
+
+            int exec = pst.executeUpdate();
+
+            if(exec > 0)
+            {
+                isSuccess = true;
+            }
+
+        } catch (ClassNotFoundException | SQLException e) {
+            e.printStackTrace();
+        }
+
+        return  isSuccess;
+    }
 }
 
