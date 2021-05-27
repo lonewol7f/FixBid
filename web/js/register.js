@@ -1,7 +1,7 @@
 function checkPassword ()
 {
-    var check1 = document.getElementById("pwd").value;
-    var check2 = document.getElementById("rpwd").value;
+    let check1 = document.getElementById("password").value;
+    let check2 = document.getElementById("RePassword").value;
 
     if(check1 != check2)
     {
@@ -19,14 +19,15 @@ function checkPassword ()
 
 function enableButton()
 {
-    if(document.getElementById("policy").checked)
+    if(document.getElementById("terms").checked)
     {
-        document.getElementById("btn1").disabled = false;
+        document.getElementById("reg_submit").disabled = false;
     }
 
     else
     {
-        document.getElementById("btn1").disabled = true;
+        document.getElementById("reg_submit").disabled = true;
     }
 
 }
+

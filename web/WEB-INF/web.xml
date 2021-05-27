@@ -104,4 +104,13 @@
         <url-pattern>/jsp/updateProduct</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>forgetPassword</servlet-name>
+        <servlet-class>servlets.forgetPasswordServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>forgetPassword</servlet-name>
+        <url-pattern>/jsp/forgetPassword</url-pattern>
+    </servlet-mapping>
+
 </web-app>

@@ -15,12 +15,12 @@ public class UserDBUtil {
     // Following code segment performs data insertion to the user table
 
     /**
-     * @param FName is first name of the user
-     * @param LName is last name of the user
-     * @param address is address of the user
-     * @param phoneNumber is phone number of the user
-     * @param email is email address of the user
-     * @param password is password of the user
+     * @param FName  first name of the user
+     * @param LName  last name of the user
+     * @param address  address of the user
+     * @param phoneNumber  phone number of the user
+     * @param email  email address of the user
+     * @param password  password of the user
      * @return status
      */
     public static boolean addUser(String FName, String LName, String address, String phoneNumber, String email, String password, String AccTpy) {
@@ -47,8 +47,8 @@ public class UserDBUtil {
 
     /**
      *
-     * @param email1
-     * @param password1
+     * @param email1 email address of the user
+     * @param password1 password of the user
      * @return
      */
 
@@ -75,7 +75,7 @@ public class UserDBUtil {
 
     /**
      *
-     * @param email1
+     * @param email1 email address of the user
      * @return
      */
 
@@ -138,11 +138,11 @@ public class UserDBUtil {
 
     /**
      *
-     * @param FName
-     * @param LName
-     * @param address
-     * @param phoneNumber
-     * @param email
+     * @param FName  first name of the user
+     * @param LName  last name of the user
+     * @param address  address of the user
+     * @param phoneNumber  phone number of the user
+     * @param email  email address of the user
      * @return
      */
     public static boolean updateUser(String FName, String LName, String address, String phoneNumber, String email) {
@@ -175,7 +175,7 @@ public class UserDBUtil {
 
     /**
      *
-     * @param mail
+     * @param mail email address of the user
      */
 
     public static boolean deleteUser(String mail) {
@@ -201,6 +201,39 @@ public class UserDBUtil {
         }
 
         return status;
+    }
+
+    /**
+     *
+     * @param UEmail user email
+     * @param newP new password
+     * @return
+     */
+
+    public static boolean resetPassword(String UEmail, String newP) {
+
+        boolean isSuccess = false;
+
+        try {
+
+            conn = DBConnectUtil.getConnection();
+            PreparedStatement pst = conn.prepareStatement("UPDATE user SET password=? WHERE email=?");
+
+            pst.setString(1, newP);
+            pst.setString(2, UEmail);
+
+            int exec = pst.executeUpdate();
+
+            if(exec > 0)
+            {
+                isSuccess = true;
+            }
+
+        } catch (ClassNotFoundException | SQLException e) {
+            e.printStackTrace();
+        }
+
+        return  isSuccess;
     }
 }
 
