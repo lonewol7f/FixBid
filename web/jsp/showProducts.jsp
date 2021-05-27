@@ -1,3 +1,6 @@
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="util.ProductDBUtil" %>
+<%@ page import="model.Product" %>
 <%--
   Created by IntelliJ IDEA.
   User: Sachintha
@@ -19,9 +22,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="../js/product.js"></script>
     <title>All Products</title>
+
+    <%
+        ArrayList<Product> products = ProductDBUtil.listProduct();
+
+    %>
 </head>
 <body>
 <%@ include file="/includes/header.jsp" %>
+
+
 
 <!--Start of table-->
 <br><br>
@@ -38,30 +48,30 @@
     </tr>
     </thead>
     <tbody>
-    <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-        <td>Watch</td>
-        <td><a href=" ">Edit</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="">Delete</a></td>
-    </tr>
-    <tr>
-        <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@fat</td>
-        <td>Watch</td>
-        <td><a href=" ">Edit</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="">Delete</a></td>
-    </tr>
-    <tr>
-        <th scope="row">3</th>
-        <td>Larry</td>
-        <td>the Bird</td>
-        <td>@twitter</td>
-        <td>Watch</td>
-        <td><a href=" ">Edit</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="">Delete</a></td>
-    </tr>
+    <%
+        for (Product p : products) {%>
+        <form action ="handleProduct" method="post">
+            <input type = "hidden" name="pid" value="<%=p.getPid() %>">
+            <tr scope="row">
+                <td><%=p.getPid() %></td>
+                <td><%=p.getpName() %></td>
+                <td><%=p.getExpDate()%></td>
+                <td><%=p.getStartPrice()%></td>
+                <td><%=p.getProductType()%></td>
+                <td>
+                    <input type="submit" name="btn" value="Edit">
+                    <input type="submit" name="btn" value="Delete">
+
+                </td>
+            </tr>
+        </form>
+        <% }
+
+        %>
+
+
+
+
     </tbody>
 </table>
 

@@ -15,13 +15,13 @@ public class ProductDBUtil {
 
 
     //Insert new Product
-    public static boolean insertProduct(String pName,String expDate,int startPrice,String ptype ,String description){
+    public static boolean insertProduct(String pName,String expDate,int startPrice,String ptype ,String description,int vendorID){
         boolean status = false;
         try {
             conn = DBConnectUtil.getConnection();
             stmt = conn.createStatement();
 
-            String sql = "INSERT INTO product values(0,'" + pName + "','" + expDate + "','" + startPrice + "','" + ptype +"','" + description + "')";
+            String sql = "INSERT INTO product values(0,'" + pName + "','" + expDate + "','" + startPrice + "','" + description +"','" + ptype + "','" + vendorID +"')";
 
             int res = stmt.executeUpdate(sql);
 
@@ -38,20 +38,18 @@ public class ProductDBUtil {
     }
 
     //Update a Product
-    public static boolean updateProduct(String pName,String expDate,int startPrice,String productType ,String description,int pid){
+    public static boolean updateProduct(String pName,String expDate,String description,int pid){
         boolean status = false;
 
         try{
 
             conn = DBConnectUtil.getConnection();
-            PreparedStatement ps = conn.prepareStatement("UPDATE product SET pName=?, expDate=?, startPrice=?, productType=?, description=? WHERE pid = ?");
+            PreparedStatement ps = conn.prepareStatement("UPDATE product SET pName=?, expDate=?, description=? WHERE pid = ?");
 
             ps.setString(1,pName);
             ps.setString(2,expDate);
-            ps.setInt(3,startPrice);
-            ps.setString(4,productType);
-            ps.setString(5,description);
-            ps.setInt(6,pid);
+            ps.setString(3,description);
+            ps.setInt(4,pid);
 
             int result = ps.executeUpdate();
 
@@ -66,8 +64,8 @@ public class ProductDBUtil {
 
         return status;
     }
-    //Select Product by id
-    public static Product selectOneProduct(int pidx){
+    //Select Single Product by id
+    public static Product selectOneProduct(int ppid){
 
         Product product = new Product();
 
@@ -75,7 +73,7 @@ public class ProductDBUtil {
             conn = DBConnectUtil.getConnection();
             stmt = conn.createStatement();
 
-            String sql = "SELECT * FROM product WHERE pid ='" + pidx + "'";
+            String sql = "SELECT * FROM product WHERE pid ='" + ppid + "'";
 
             rs = stmt.executeQuery(sql);
             while (rs.next()) {
@@ -84,6 +82,7 @@ public class ProductDBUtil {
                 product.setStartPrice(rs.getInt("startPrice"));
                 product.setDescription(rs.getString("description"));
                 product.setProductType(rs.getString("productType"));
+                product.setPid(rs.getInt("pid"));
             }
         } catch (ClassNotFoundException | SQLException e) {
 
@@ -108,6 +107,7 @@ public class ProductDBUtil {
             while (rs.next()){
                 Product product = new Product();
 
+                product.setPid((rs.getInt(1)));
                 product.setpName(rs.getString("pName"));
                 product.setExpDate(rs.getString("expDate"));
                 product.setStartPrice(rs.getInt("startPrice"));
@@ -129,7 +129,7 @@ public class ProductDBUtil {
     //Delete Product
     public static boolean deleteProduct(int pid ) {
 
-        boolean status = false;
+        boolean deleted = false;
 
         try {
 
@@ -141,13 +141,13 @@ public class ProductDBUtil {
 
             if(res > 0)
             {
-                status = true;
+                deleted = true;
             }
 
         }catch(Exception e) {
             e.printStackTrace();
         }
 
-        return status;
+        return deleted;
     }
 }

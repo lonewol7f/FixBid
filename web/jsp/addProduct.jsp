@@ -27,7 +27,7 @@
 <!--start of form-->
 
 <center>
-<form class="form-horizontal">
+<form action="addedProduct" method="post" class="form-horizontal">
     <fieldset>
 
         <!-- Form Name -->
@@ -70,9 +70,9 @@
 
         <!-- Select Basic -->
         <div class="form-group">
-            <label class="col-md-4 control-label" for="product_category">PRODUCT CATEGORY</label>
+            <label class="col-md-4 control-label" for="product_type">PRODUCT TYPE</label>
             <div class="col-md-4">
-                <select id="product_category" name="product_category" class="form-control">
+                <select id="product_type" name="product_type" class="form-control">
                     <option selected value="Watch">Watch</option>
                     <option value="Shoes">Shoes</option>
                     <option value="Pens">Pens</option>
@@ -91,17 +91,8 @@
         </div>
 
 
-                <!-- File Button -->
-                <div class="form-group">
-                    <label class="col-md-4 control-label" for="filebutton">main_image</label>
-                    <div class="col-md-4">
-                        <input id="filebutton" name="filebutton" class="input-file" type="file">
-                    </div>
-                </div>
-
                 <!-- Button -->
                 <div class="form-group">
-                    <label class="col-md-4 control-label" for="submitbutton">Submit Button</label>
                     <div class="col-md-4">
                         <button id="submitbutton" name="submitbutton" class="btn btn-primary">Submit Product</button>
                     </div>
