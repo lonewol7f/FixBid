@@ -77,4 +77,31 @@
     </servlet-mapping>
 
 
+    <servlet>
+        <servlet-name>addedProduct</servlet-name>
+        <servlet-class>servlets.addProductServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addedProduct</servlet-name>
+        <url-pattern>/jsp/addedProduct</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>handleProduct</servlet-name>
+        <servlet-class>servlets.handleProductServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>handleProduct</servlet-name>
+        <url-pattern>/jsp/handleProduct</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>updateProduct</servlet-name>
+        <servlet-class>servlets.updateProductServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>updateProduct</servlet-name>
+        <url-pattern>/jsp/updateProduct</url-pattern>
+    </servlet-mapping>
+
 </web-app>
