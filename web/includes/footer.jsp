@@ -14,8 +14,7 @@
                             <!-- <h1 class="font-weight-bold mr-1 px-3" style="color:#16151a; background-color:#957bda"> F </h1> -->
                             <h1 style="color: #02457A;letter-spacing: 2pc;font-weight: bold;">FIXBID</h1>
                         </div>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi non
-                            pariatur numquam animi nam at impedit odit nisi.</p>
+                        <p class="card-text">Since 2021</p>
                         <div class="social mt-2 mb-3"><i class="fa fa-facebook-official fa-lg"></i> <i
                                 class="fa fa-instagram fa-lg"></i> <i class="fa fa-twitter fa-lg"></i> <i
                                 class="fa fa-linkedin-square fa-lg"></i> <i class="fa fa-facebook"></i></div>
