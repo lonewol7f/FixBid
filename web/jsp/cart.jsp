@@ -43,7 +43,7 @@
                 <div class="row">
                     <div class="col-sm-2 hidden-xs"><img src="../images/Products/watch2.jpg" alt="..." class="img-responsive"/></div>
                     <div class="col-sm-10">
-                        <h4 class="nomargin">Product 1</h4>
+                        <h4 class="nomargin">watch 1</h4>
                     </div>
                 </div>
             </td>
@@ -59,7 +59,7 @@
                 <div class="row">
                     <div class="col-sm-2 hidden-xs"><img src="../images/Products/pen1.jpg" alt="..." class="img-responsive"/></div>
                     <div class="col-sm-10">
-                        <h4 class="nomargin">Product 2</h4>
+                        <h4 class="nomargin">Pen 1</h4>
                     </div>
                 </div>
             </td>
@@ -76,7 +76,7 @@
                 <div class="row">
                     <div class="col-sm-2 hidden-xs"><img src="../images/Products/timberland.jpg"  alt="..." class="img-responsive"/></div>
                     <div class="col-sm-10">
-                        <h4 class="nomargin">Product 3</h4>
+                        <h4 class="nomargin">shoe 1</h4>
                     </div>
                 </div>
             </td>
