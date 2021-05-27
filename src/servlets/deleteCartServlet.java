@@ -14,20 +14,5 @@ import java.io.IOException;
 @WebServlet(name = "deleteCartServlet")
 public class deleteCartServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-        String delete = request.getParameter("delete");
-
-        cartDBUtil.deleteCart(delete);
-        if(result == true)
-        {
-            System.out.println("product delete is successful");
-
-            RequestDispatcher dispatcher = request.getRequestDispatcher("/jsp/cart.jsp");
-            dispatcher.forward(request,response);
-        }
-        else
-        {
-            System.out.println("product delete is not successful");
-        }
     }
 }
