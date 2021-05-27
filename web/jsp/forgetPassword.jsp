@@ -23,7 +23,7 @@
 <%@ include file="/includes/header.jsp" %>
 <div class = "container mt-5" style="background-color:  whitesmoke; width : 35%; height : 50%">
 
-    <form action="#" method="post">
+    <form action="forgetPassword" method="post">
 
         <center> <h1 style="font-weight: bold"> Reset Password </h1> </center>
 
