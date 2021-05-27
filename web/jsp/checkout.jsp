@@ -25,7 +25,7 @@
 </head>
 <body>
 
-<h2>Checkout Form</h2>
+<center><h2>Checkout Form</h2></center>
 
 <div class="row">
     <div class="col-75">
