@@ -14,6 +14,9 @@
             <a href="${pageContext.request.contextPath}/jsp/register.jsp">
                 <button class="btn btn-info mr-1">Sign up</button>
             </a>
+            <a href="${pageContext.request.contextPath}/jsp/cart.jsp">
+            <button class="btn btn-outline-info mr-4">cart</button>
+            </a>
         </div>
     </div>
 </div>
