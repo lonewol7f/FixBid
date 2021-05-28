@@ -121,11 +121,13 @@ public class UserDBUtil {
             while (rs.next()){
                 User user = new User();
 
+                user.setUID(rs.getInt("UID"));
                 user.setFName(rs.getString("FName"));
                 user.setLName(rs.getString("LName"));
                 user.setAddress(rs.getString("address"));
                 user.setPhoneNumber(rs.getString("phoneNumber"));
                 user.setEmail(rs.getString("email"));
+                user.setAccType(rs.getString("AccTpy"));
 
                 users.add(user);
             }

@@ -9,6 +9,7 @@ public class User {
     private String phoneNumber;
     private String email;
     private String password;
+    private String accType;
 
 
     public int getUID() {
@@ -65,5 +66,11 @@ public class User {
         this.password = password;
     }
 
+    public String getAccType() {
+        return accType;
+    }
 
+    public void setAccType(String accType) {
+        this.accType = accType;
+    }
 }

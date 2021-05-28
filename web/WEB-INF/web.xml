@@ -32,6 +32,15 @@
     </servlet-mapping>
 
     <servlet>
+        <servlet-name>delUser</servlet-name>
+        <servlet-class>servlets.delUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>delUser</servlet-name>
+        <url-pattern>/jsp/delUser</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
         <servlet-name>registerSer</servlet-name>
         <servlet-class>servlets.registerServlet</servlet-class>
     </servlet>
@@ -112,5 +121,7 @@
         <servlet-name>forgetPassword</servlet-name>
         <url-pattern>/jsp/forgetPassword</url-pattern>
     </servlet-mapping>
+
+
 
 </web-app>
