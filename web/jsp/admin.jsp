@@ -3,6 +3,8 @@
 <%@ page import="util.FeedbackDBUtil" %>
 <%@ page import="model.Admin" %>
 <%@ page import="util.AdminDBUtil" %>
+<%@ page import="model.User" %>
+<%@ page import="util.UserDBUtil" %>
 <%--
   User: lonewol7f
   Date: 3/16/2021
@@ -158,6 +160,48 @@
     <div id="users-div" style="display: none">
         <h1>Users</h1>
         TO BE IMPLEMENTED
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th scope="col">User ID</th>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Account Type</th>
+                <th scope="col"></th>
+            </tr>
+            </thead>
+            <tbody>
+            <%
+                ArrayList<User> users = UserDBUtil.listUser();
+
+                for (User user : users) {
+            %>
+            <tr>
+                <th scope="row"><%=user.getUID() %>
+                </th>
+                <td><%=user.getFName() %>
+                </td>
+                <td><%=user.getLName() %>
+                </td>
+                <td style="word-wrap: break-word;min-width: 160px;max-width: 160px;"><%=user.getEmail() %>
+                </td>
+                <td><%=user.getAccType() %>
+                </td>
+                <td>
+                    <form method="POST" action="delUser">
+                        <input type="hidden" name="uMail" value="<%=user.getEmail()%>"/>
+                        <button type="submit" value="<%=user.getEmail() %>" class="btn btn-danger">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </form>
+                </td>
+            </tr>
+            <%
+                }
+            %>
+            </tbody>
+        </table>
     </div>
     <div id="feedback-div" style="display: none">
         <h1 class="mb-5">Feedback</h1>
