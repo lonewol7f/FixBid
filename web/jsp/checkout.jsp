@@ -46,10 +46,6 @@
 
                         <div class="row">
                             <div class="col-50">
-                                <label for="state">State</label>
-                                <input type="text" id="state" name="state" placeholder="">
-                            </div>
-                            <div class="col-50">
                                 <label for="zip">Zip</label>
                                 <input type="text" id="zip" name="zip" placeholder="">
                             </div>
