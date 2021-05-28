@@ -159,7 +159,7 @@
     </div>
     <div id="users-div" style="display: none">
         <h1>Users</h1>
-        TO BE IMPLEMENTED
+        <br>
         <table class="table table-hover">
             <thead>
             <tr>
