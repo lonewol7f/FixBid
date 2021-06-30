@@ -66,7 +66,7 @@
 
             <!-- Text input-->
             <div class="form-group">
-                <label class="col-md-4 control-label" for="priceEdit">UPDATE START PRICE(USD $)</label>
+                <label class="col-md-4 control-label" for="priceEdit">START PRICE(USD $)</label>
                 <div class="col-md-4">
                     <input id="priceEdit" name="priceEdit" placeholder="Enter a USD value(Ex:10)" class="form-control input-md" required="" type="text" value="<%=product.getStartPrice()%>" disabled>
 
