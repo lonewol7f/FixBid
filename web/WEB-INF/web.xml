@@ -85,7 +85,7 @@
         <url-pattern>/jsp/deleteUser</url-pattern>
     </servlet-mapping>
 
-
+-----------------------
     <servlet>
         <servlet-name>addedProduct</servlet-name>
         <servlet-class>servlets.addProductServlet</servlet-class>

@@ -28,8 +28,8 @@
     <div class="card">
         <img class="card-img-top" src="../images/Products/pen1.jpg" alt="Card image cap">
         <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">fdgffdfgd</p>
+            <h5 class="card-title">Pen 1</h5>
+            <p class="card-text">Fountain Pen</p>
 
             <h6 id="countdown"></h6><!-- Display the countdown timer in an element -->
         </div>
@@ -41,8 +41,9 @@
     <div class="card">
         <img class="card-img-top" src="../images/Products/pen2.jpg" alt="Card image cap">
         <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">xxxx</p>
+            <h5 class="card-title">Pen 2</h5>
+            <p class="card-text">Ink Pen</p>
+            <h6 id="countdown"></h6><!-- Display the countdown timer in an element -->
         </div>
         <a href="#" class="btn btn-primary" style="width: 80%;margin-bottom: 15px;margin-left: auto; margin-right: auto;">Bid</a>
         <div class="card-footer">
@@ -52,8 +53,9 @@
     <div class="card">
         <img class="card-img-top" src="../images/Products/pen6.jpg" alt="Card image cap">
         <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">xxxxxxxxx</p>
+            <h5 class="card-title">Pen 3</h5>
+            <p class="card-text">Blue Pen</p>
+            <h6 id="countdown"></h6><!-- Display the countdown timer in an element -->
         </div>
         <a href="#" class="btn btn-primary" style="width: 80%;margin-bottom: 15px;margin-left: auto; margin-right: auto;">Bid</a>
         <div class="card-footer">
@@ -63,8 +65,9 @@
     <div class="card">
         <img class="card-img-top" src="../images/Products/pen4.jpg" alt="Card image cap">
         <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">xxxxxxxx</p>
+            <h5 class="card-title">Pen 4</h5>
+            <p class="card-text">Charcoal Pencil</p>
+            <h6 id="countdown"></h6><!-- Display the countdown timer in an element -->
         </div>
         <a href="#" class="btn btn-primary" style="width: 80%;margin-bottom: 15px;margin-left: auto; margin-right: auto;">Bid</a>
         <div class="card-footer">
@@ -74,8 +77,9 @@
     <div class="card">
         <img class="card-img-top" src="../images/Products/pen1.jpg" height="300" alt="Card image cap">
         <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">xxxxxxxxx</p>
+            <h5 class="card-title">Pen 5</h5>
+            <p class="card-text">Black Pen</p>
+            <h6 id="countdown"></h6><!-- Display the countdown timer in an element -->
         </div>
         <a href="#" class="btn btn-primary" style="width: 80%;margin-bottom: 15px;margin-left: auto; margin-right: auto;">Bid</a>
         <div class="card-footer">
@@ -89,8 +93,9 @@
     <div class="card">
         <img class="card-img-top" src="../images/Products/af1.jpg" alt="Card image cap">
         <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <h5 class="card-title">Shoe 1</h5>
+            <p class="card-text">Nike AF1 Black</p>
+            <h6 id="countdown"></h6><!-- Display the countdown timer in an element -->
         </div>
         <a href="#" class="btn btn-primary" style="width: 80%;margin-bottom: 15px;margin-left: auto; margin-right: auto;">Bid</a>
         <div class="card-footer">
@@ -100,8 +105,9 @@
     <div class="card">
         <img class="card-img-top" src="../images/Products/converse.jpg" alt="Card image cap">
         <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <h5 class="card-title">Shoe 2</h5>
+            <p class="card-text">Converse Shoe</p>
+            <h6 id="countdown"></h6><!-- Display the countdown timer in an element -->
         </div>
         <a href="#" class="btn btn-primary" style="width: 80%;margin-bottom: 15px;margin-left: auto; margin-right: auto;">Bid</a>
         <div class="card-footer">
@@ -111,8 +117,9 @@
     <div class="card">
         <img class="card-img-top" src="../images/Products/floral.jpg" alt="Card image cap">
         <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            <h5 class="card-title">Shoe 3</h5>
+            <p class="card-text">Floral Shoe </p>
+            <h6 id="countdown"></h6><!-- Display the countdown timer in an element -->
         </div>
         <a href="#" class="btn btn-primary" style="width: 80%;margin-bottom: 15px;margin-left: auto; margin-right: auto;">Bid</a>
         <div class="card-footer">
@@ -122,8 +129,9 @@
     <div class="card">
         <img class="card-img-top" src="../images/Products/nb.jpg" alt="Card image cap">
         <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <h5 class="card-title">Shoe 4</h5>
+            <p class="card-text">Pink NB Shoe</p>
+            <h6 id="countdown"></h6><!-- Display the countdown timer in an element -->
         </div>
         <a href="#" class="btn btn-primary" style="width: 80%;margin-bottom: 15px;margin-left: auto; margin-right: auto;">Bid</a>
         <div class="card-footer">
@@ -133,8 +141,9 @@
     <div class="card">
         <img class="card-img-top" src="../images/Products/timberland.jpg" height="300" alt="Card image cap">
         <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <h5 class="card-title">Shoe 5</h5>
+            <p class="card-text">Timberland Shoe</p>
+            <h6 id="countdown"></h6><!-- Display the countdown timer in an element -->
         </div>
         <a href="#" class="btn btn-primary" style="width: 80%;margin-bottom: 15px;margin-left: auto; margin-right: auto;">Bid</a>
         <div class="card-footer">
@@ -148,8 +157,8 @@
     <div class="card">
         <img class="card-img-top" src="../images/Products/watch1.jpg" alt="Card image cap">
         <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <h5 class="card-title">Watch 1</h5>
+            <p class="card-text">Made in Italy.Brand New.</p>
         </div>
         <a href="#" class="btn btn-primary" style="width: 80%;margin-bottom: 15px;margin-left: auto; margin-right: auto;">Bid</a>
         <div class="card-footer">
@@ -159,8 +168,9 @@
     <div class="card">
         <img class="card-img-top" src="../images/Products/watch2.jpg" alt="Card image cap">
         <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <h5 class="card-title">Watch 2</h5>
+            <p class="card-text">Womens watch</p>
+            <h6 id="countdown"></h6><!-- Display the countdown timer in an element -->
         </div>
         <a href="#" class="btn btn-primary" style="width: 80%;margin-bottom: 15px;margin-left: auto; margin-right: auto;">Bid</a>
         <div class="card-footer">
@@ -170,8 +180,9 @@
     <div class="card">
         <img class="card-img-top" src="../images/Products/watch3.jpg" alt="Card image cap">
         <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            <h5 class="card-title">Watch 3</h5>
+            <p class="card-text">Mens Gold Watch</p>
+            <h6 id="countdown"></h6><!-- Display the countdown timer in an element -->
         </div>
         <a href="#" class="btn btn-primary" style="width: 80%;margin-bottom: 15px;margin-left: auto; margin-right: auto;">Bid</a>
         <div class="card-footer">
@@ -181,8 +192,9 @@
     <div class="card">
         <img class="card-img-top" src="../images/Products/watch4.jpg" alt="Card image cap">
         <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <h5 class="card-title">Watch 4</h5>
+            <p class="card-text">Womens Bronze Watch</p>
+            <h6 id="countdown"></h6><!-- Display the countdown timer in an element -->
         </div>
         <a href="#" class="btn btn-primary" style="width: 80%;margin-bottom: 15px;margin-left: auto; margin-right: auto;">Bid</a>
         <div class="card-footer">
@@ -192,8 +204,9 @@
     <div class="card">
         <img class="card-img-top" src="../images/Products/watch5.jpg" height="300" alt="Card image cap">
         <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <h5 class="card-title">Watch 5</h5>
+            <p class="card-text">Mens Charcoal Watch</p>
+            <h6 id="countdown"></h6><!-- Display the countdown timer in an element -->
         </div>
         <a href="#" class="btn btn-primary" style="width: 80%;margin-bottom: 15px;margin-left: auto; margin-right: auto;">Bid</a>
         <div class="card-footer">

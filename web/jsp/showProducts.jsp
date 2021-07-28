@@ -34,7 +34,8 @@
 
 
 <!--Start of table-->
-<br><br>
+<br>
+<a href="addProduct.jsp"><button type="button" class="btn btn-primary">Add a Product</button></a><br>
 <table class="table">
     <thead class="thead-dark">
     <tr>
